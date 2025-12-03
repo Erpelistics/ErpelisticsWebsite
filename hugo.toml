@@ -13,7 +13,7 @@ theme = "hugo-theme-gallery"
 
 [params]
   defaultTheme = "dark"
-  description = "Example site for hugo-theme-gallery"
+  description = "Erpelistics - Ducking good music"
   title = "My Gallery"
   logo = "images/logo.svg"   # relative to /static/
   customCSS = ["css/custom.css"]
