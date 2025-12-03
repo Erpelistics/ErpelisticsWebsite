@@ -1,0 +1,62 @@
+baseURL = "http://localhost:1313/"
+
+copyright = "© Erpelistics"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+languageCode = "de"
+timeZone = "Europe/Berlin"
+timeout = "120s"
+title = "Erpelistics"
+
+theme = "hugo-theme-gallery"
+
+[params]
+  defaultTheme = "dark"
+  description = "Example site for hugo-theme-gallery"
+  title = "My Gallery"
+  logo = "images/logo.svg"   # relative to /static/
+  customCSS = ["css/custom.css"]
+  [params.author]
+    email = "user@example.com"
+    name = "Erpelistics"
+  [params.socialIcons]
+    instagram = "https://www.instagram.com/erpelistics/#"
+    spotify = "https://open.spotify.com/artist/3AHW8bdZjGfrX4KkEfEAzd?si=Iq-g-zCNTI-UPdsIMlAyMw"
+    soundcloud = "https://soundcloud.com/erpelistics"
+    applemusic = "https://music.apple.com/us/artist/erpelistics/1806949593"
+    youtube = "https://www.youtube.com/"
+    email = "mailto:erpelistics@web.de"
+  [params.gallery]
+    #boxSpacing = 10
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[menu]
+  [[menu.footer]]
+    #name = "GitHub"
+    #url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    #weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

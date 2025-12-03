@@ -1,0 +1,7 @@
+{{ if .Title }}
+  <section class="description">
+    {{ with .Params.description }}
+      <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </section>
+{{ end }}

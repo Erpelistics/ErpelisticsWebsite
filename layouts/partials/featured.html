@@ -1,0 +1,68 @@
+{{ range where site.Pages.ByDate.Reverse "Params.featured" "=" true }}
+  {{ $gallery := partial "get-gallery.html" . }}
+  {{ if $gallery }}
+
+    {{/* -------------------------------------------------------------
+         EXPORT ALL IMAGE URLs FROM THIS FEATURED ALBUM TO JS
+       ------------------------------------------------------------- */}}
+    {{ $allImages := .Resources.ByType "image" }}
+
+    <script>
+      window.featuredImages = window.featuredImages || {};
+      window.featuredImages["{{ .File.UniqueID }}"] = [
+        {{- range $i, $img := $allImages -}}
+          "{{ ($img.Filter (slice images.AutoOrient (images.Process "fit 1600x1600"))).RelPermalink }}"{{ if lt (add $i 1) (len $allImages) }},{{ end }}
+        {{- end -}}
+      ];
+    </script>
+
+    {{/* -------------------------------------------------------------
+         DETERMINE STATIC FALLBACK COVER IMAGE
+       ------------------------------------------------------------- */}}
+    {{ $covers := where (.Resources.ByType "image") "Params.cover" "eq" true }}
+    {{ $cover := "" }}
+    {{ if ge (len $covers) 1 }}
+      {{ $cover = index $covers 0 }}
+    {{ end }}
+
+    {{/* --- Safe featured image selection --- */}}
+    {{ $featured := $cover }}
+    {{ if not $featured }}
+      {{ $featured = (.Resources.ByType "image").GetMatch (.Params.featured_image | default "*feature*") }}
+    {{ end }}
+    {{ if not $featured }}
+      {{ $featured = (index $gallery.images 0).image }} {{/* pick the actual resource, not the dict */}}
+    {{ end }}
+
+    {{ $thumbnail := $featured.Filter (slice images.AutoOrient (images.Process "fit 1600x1600")) }}
+    {{ $color := index $thumbnail.Colors 0 | default "transparent" }}
+
+    {{/* -------------------------------------------------------------
+         FEATURED CARD WITH UNIQUE ID FOR JS ROTATION
+       ------------------------------------------------------------- */}}
+    <section class="featured">
+      <a class="featured-card"
+         id="featured-{{ .File.UniqueID }}"
+         href="{{ .RelPermalink }}"
+         style="background-color: {{ $color }}; background-image: url({{ $thumbnail.RelPermalink }});">
+
+        <div>
+          <h2>{{ .Title }}</h2>
+          <p>
+            {{ with .Params.subtitle }}
+              {{ . }}
+            {{ else }}
+              {{ if gt $gallery.albumCount 0 }}
+                {{ T "albumCount" (dict "count" ($gallery.albumCount | lang.FormatNumber 0) "photoCount" ($gallery.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
+              {{ else }}
+                {{ T "photoCount" ($gallery.imageCount | lang.FormatNumber 0) }}
+              {{ end }}
+            {{ end }}
+          </p>
+        </div>
+
+      </a>
+    </section>
+
+  {{ end }}
+{{ end }}

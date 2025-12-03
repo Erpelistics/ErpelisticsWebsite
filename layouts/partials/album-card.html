@@ -1,0 +1,34 @@
+{{/*
+  album-card.html
+  Renders a card for an album or sub-album.
+  Works for home page and sub-albums.
+*/}}
+
+{{ $page := . }} {{/* explicitly set the page this card represents */}}
+{{ $gallery := partial "get-gallery.html" $page }}
+
+{{ if $gallery }}
+  <a class="card" href="{{ $page.RelPermalink }}" title="{{ $page.Title }}">
+    <figure style="background-color: {{ $gallery.color }}">
+      <img class="lazyload"
+           width="{{ $gallery.thumbnail.Width }}"
+           height="{{ $gallery.thumbnail.Height }}"
+           data-src="{{ $gallery.thumbnail.RelPermalink }}"
+           alt="{{ $page.Title }}" />
+    </figure>
+    <div>
+      <h2>{{ $page.Title }}</h2>
+      <p>
+        {{ with .Params.subtitle }}
+          {{ . }}
+        {{ else }}
+          {{ if gt $gallery.albumCount 0 }}
+            {{ T "albumCount" (dict "count" ($gallery.albumCount | lang.FormatNumber 0) "photoCount" ($gallery.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
+          {{ else }}
+            {{ T "photoCount" ($gallery.imageCount | lang.FormatNumber 0) }}
+          {{ end }}
+        {{ end }}
+      </p>
+    </div>
+  </a>
+{{ end }}

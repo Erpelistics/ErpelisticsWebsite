@@ -1,0 +1,225 @@
+/* custom.css */
+
+/* Responsive header logo */
+.site-logo {
+  height: 40px;          /* default height for desktop */
+  max-height: 50px;      /* prevent it from getting too tall */
+  width: auto;           /* maintain aspect ratio */
+  vertical-align: middle;
+  display: inline-block; /* ensures it aligns properly with buttons/text */
+}
+
+/* Mobile / smaller screens */
+@media (max-width: 768px) {
+  .site-logo {
+    height: 30px;        /* smaller height on mobile */
+  }
+}
+
+/* Homepage logo */
+.home-logo {
+  height: 120px;      /* adjust as needed for landing page */
+  width: auto;
+  display: block;
+  margin: 0 auto;     /* center horizontally */
+}
+
+/* Force album cards into a square ratio */
+.card figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Make it square */
+  overflow: hidden;
+}
+
+/* Make thumbnail fill the square */
+.card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop to fill square */
+  object-position: center;
+}
+
+/* Concert table styling */
+.prose table {
+  width: 100%;
+  border-collapse: separate; /* allows rounded corners */
+  border-spacing: 0;
+  margin: 2rem 0;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* subtle shadow */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* General cell styling */
+.prose table th,
+.prose table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Row striping */
+.prose table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 20); /* very subtle stripe */
+}
+
+/* Split date styling */
+.date-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* align content to bottom of cell */
+  align-items: flex-start;   /* left-align stacked content */
+  line-height: 1;
+}
+
+.date-cell .day {
+  font-size: 1.6rem; /* big day number */
+  font-weight: 700;
+}
+
+.date-cell .month-year {
+  font-size: 0.85rem; /* smaller subtitle */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Location + city stacked column */
+.location-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* bottom align */
+  align-items: flex-start;
+  line-height: 1;
+  color: #fff;
+}
+
+.location-cell .location {
+  font-size: 1.6rem;
+}
+
+.location-cell .city {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* Ticket button styling */
+.prose table a {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  background: #666;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.prose table a:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.prose table td:last-child {
+  text-align: right; /* aligns content to the right */
+}
+
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    font-weight: 600;           /* make them bold */
+    margin-top: 1.5em;          /* spacing above */
+    margin-bottom: 0.75em;      /* spacing below */
+    color: var(--text-1);       /* ensure visible text color */
+    line-height: 1.3;           /* better readability */
+}
+
+.prose h3 {
+    font-size: 1.25rem;         /* scale H3 appropriately */
+}
+
+/* Container matching Gallery theme aesthetic */
+.soundcloud-embed {
+    background: var(--surface-2);   /* same background tone as cards/gallery items */
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 2rem 0;
+}
+
+/* Responsive iframe */
+.soundcloud-embed iframe {
+    border: none;
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+}
+
+/* Attribution block – minimal + subtle */
+.soundcloud-attribution {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--text-2);
+}
+
+.soundcloud-attribution a {
+    color: var(--text-1);
+    text-decoration: none;
+}
+
+.soundcloud-attribution a:hover {
+    text-decoration: underline;
+}
+
+.featured-card {
+  transition: opacity 1.2s ease-in-out;
+}
+
+
+
+.gallery-item figure {
+  position: relative;
+}
+
+.gallery-item figure .credit {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 2px 6px;
+  border-radius: 3px;
+  line-height: 1.2;
+}
+
+.gallery-item figure .credit {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item figure:hover .credit {
+  opacity: 1;
+}
+
+.video-container {
+  max-width: 800px;      /* match gallery max-width */
+  margin: 2rem auto;     /* center and add vertical spacing */
+  border-radius: 8px;    /* match card/gallery rounding */
+  overflow: hidden;      /* crop corners nicely */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* subtle gallery shadow */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;          /* responsive, keeps aspect ratio if needed */
+  display: block;
+  border: none;
+}

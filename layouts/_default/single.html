@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "title.html" . }}
+  {{ if not .Params.hide_gallery }}
+    {{ partial "gallery.html" . }}
+  {{ end }}
+  {{ partial "related.html" . }}
+  {{ with .Content }}
+    <section class="prose">
+      {{ . }}
+    </section>
+  {{ end }}
+{{ end }}

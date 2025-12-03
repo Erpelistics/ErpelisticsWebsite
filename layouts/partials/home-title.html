@@ -1,0 +1,9 @@
+{{ if .Title }}
+  <hgroup>
+    {{ if .Site.Params.logo }}
+      <img src="{{ .Site.Params.logo | relURL }}" alt="{{ $.Site.Title }}" class="home-logo" />
+    {{ else }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
+  </hgroup>
+{{ end }}

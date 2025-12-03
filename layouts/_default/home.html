@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ partial "home-title.html" . }}
+  {{ partial "featured.html" . }}
+  {{ partial "home-description.html" . }}
+  <section class="galleries">
+    {{ range where .Pages "Params.private" "ne" true }}
+      {{ partial "album-card.html" . }}
+    {{ end }}
+  </section>
+{{ end }}
