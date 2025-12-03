@@ -17,6 +17,12 @@ Tel.: 01578/2250914 \
 erpelistics@web.de
 
 
+### Haftungsausschluss / Disclaimer:
+Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+
+### Urheberrecht:
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers
+
 ### Datenschutz
 Die nachfolgende Datenschutzerklärung klärt Nutzer über die Art, den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den verantwortlichen Anbieter auf dieser Website (im folgenden “Angebot”) auf.
 Die rechtlichen Grundlagen des Datenschutzes finden sich in der Datenschutzgrundverordnung (DSGVO), im Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).
