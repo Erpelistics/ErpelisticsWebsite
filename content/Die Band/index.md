@@ -11,18 +11,28 @@ params:
   private: true # do not show in list, only as feature
 description: "Groovige Beats, satte Gitarrensounds, wärmende Bass-Lines und mächtige Vocals – die Erpelistics verstehen sich darauf, mit der klassischsten aller Bandbesetzungen energetisch, neu und frisch zu klingen. Ihre musikalische Eigenkreation reißt Genregrenzen nieder und fügt scheinbar Widersprüchliches zusammen: Wohnzimmerkonzert-Wohlfühlatmosphäre mit Stage-Diving, Garagenband-Sound mit Liebe zum Detail, Rockmusik und Hüftschwung. „Alternative-Indie-Funk-Rock“? Ja, aber erpelistischer! Dazu erzählen Texte auf Englisch, Deutsch und Portugiesisch vom Weltuntergang, Hoffnung, Liebe und den restlichen Zumutungen der Gegenwart, während sich das Publikum wahlweise von einem lieblichen Bariton verzaubern oder von dreckigem Sprechgesang vorantreiben lassen kann."
 resources:
-  - src: Bandfoto_Insbruck.jpg
-    params:
-      credit: "© Victor Habes"
-  - src: Band1.jpeg
+  - src: Band_1.png
     params:
       credit: "© Tanja Upravitelev"
-  - src: Band2.jpeg
+  - src: Band_2.png
+    params:
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Band_3.png
     params:
       credit: "© Victor Habes"
-  - src: Band3.jpeg
+  - src: Band_4.png
+    params:
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Band_4.png
+    params:
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Band_5.png
     params:
       credit: "© Tanja Upravitelev"
+  - src: Band_6.jpeg
+    params:
+      credit: "© Nele Drathen"
+  
 ---
 
 Was in ihrer Jugend als Begeisterung und Leidenschaft für Musik begann und sie über 15 Jahre hinweg in wechselnden Konstellationen immer wieder zusammenführte, fand ausgerechnet durch die eingeschränkte Freiheit während der Corona-Zeit seine konkrete Form: die Erpelistics.
@@ -34,4 +44,4 @@ Nachdem ihre Zusammenarbeit in den vergangenen zwei Jahren bereits einen eigenen
 
 
 ---
-**Fotos**: [Victor Habes](https://www.victor-habes-vicproductions.com/), [Tanja Upravitelev](http://tup-arte.com/)
+**Fotos**: [Victor Habes](https://www.victor-habes-vicproductions.com/), [Tanja Upravitelev](http://tup-arte.com/), [Jojo - Farytaleish_photography](https://linktr.ee/jojofairy), [Nele Drathen](https://www.instagram.com/_nelson.ne_/)

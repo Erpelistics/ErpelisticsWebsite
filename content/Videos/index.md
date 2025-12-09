@@ -18,7 +18,8 @@ resources:
       hidden: false
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+„Enough Playing Around“ – Live im Schon Schön (2025):
+Dieses Video fängt die Erpelistics genau dort ein, wo ihre Musik am stärksten wirkt: auf der Bühne. Beim Konzert Moshpit Mainz Vol. 2 im Schon Schön liefert die Band eine energiegeladene Live-Version von „Enough Playing Around“, roh, unmittelbar und voller Spielfreude. Ein Mitschnitt, der zeigt, wie druckvoll, dynamisch und nahbar der erpelistische Sound im Konzertmoment wirklich ist.
 
 
 <div class="video-container">
@@ -31,5 +32,3 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     allowfullscreen>
   </iframe>
 </div>
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
