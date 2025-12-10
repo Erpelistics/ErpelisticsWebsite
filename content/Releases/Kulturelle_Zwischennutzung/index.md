@@ -11,7 +11,7 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-## -- "Keep buying your shit" --
+## -- "Meine Freiheit hört nicht bei dir auf, sie fängt mit dir an" --
 
 {{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" >}}
 
