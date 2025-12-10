@@ -4,6 +4,8 @@ title: Live im Wide Whisper
 categories: ["Live Sets"]
 subtitle: "Live Set - 2023"
 weight: 5
+params:
+  private: true
 resources:
   - src: Live_im_White_Whisper.jpeg
     params:
