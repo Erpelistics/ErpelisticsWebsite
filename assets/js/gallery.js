@@ -14,6 +14,13 @@ if (gallery) {
     return parseFloat(img.getAttribute("width")) / parseFloat(img.getAttribute("height"));
   });
 
+  function getTargetRowHeight() {
+    const width = window.innerWidth;
+    if (width < 480) return 120; // phones
+    if (width < 768) return 180; // small tablets
+    return params.targetRowHeight || 288;
+  }
+
   function updateGallery() {
     if (containerWidth === gallery.getBoundingClientRect().width) return;
     containerWidth = gallery.getBoundingClientRect().width;
@@ -21,7 +28,7 @@ if (gallery) {
     const layout = justifiedLayout(aspectRatios, {
       rowWidth: containerWidth,
       spacing: Number.isInteger(params.boxSpacing) ? params.boxSpacing : 8,
-      rowHeight: params.targetRowHeight || 288,
+      rowHeight: getTargetRowHeight(),
       heightTolerance: Number.isInteger(params.targetRowHeightTolerance) ? params.targetRowHeightTolerance : 0.25,
       justifyLastRow: "center",
     });
