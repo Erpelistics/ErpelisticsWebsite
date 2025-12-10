@@ -35,8 +35,6 @@ resources:
   
 ---
 
-## Chronologie:
-
 Was als zielloses Jammen dreier Jugendfreunde in einem Mainzer WG-Zimmer begann, fand ausgerechnet während der Corona-Pandemie seine konkrete Form als Bandprojekt. Das zunächst rein instrumentale Trio aus Gitarre, E-Bass und Percussions erkundete von Beginn an eine Vielzahl von Genres und hielt auf den breitgetretenen Pfaden des Rock wurde immer wieder inne, um mit Jazz und psychedelischem Funk, Stoner-Rock und Post-Punk zu experimentieren. Ein dynamischer Crossover-Stil hatte sich herauskristallisiert, mit dem David (Gitarre), Coco (Drums) und Julius (Bass) erstmals Ende 2022 unter dem Namen Erpelistics auftraten.
 
 Komplett war die Gruppe jedoch erst mit der Ergänzung des Gesangs im Frühjahr 2023. Die kraftvolle und gleichzeitig zarte Stimme von Roberto verlieh der Musik nicht nur eine zusätzliche Farbe; sie bereicherte die Band um die Dimension der Poesie. Von eingängigen Hymnen zum Mitsingen über intime Chansons zum Augenschließen bis hin zu ironischen Versen zum Schmunzeln entstand so ein breites Repertoire an Songs, mit denen die Erpelistics seit gut zwei Jahren gekonnt Ohrwürmer in den Gehörgängen ihres Publikums hinterlassen.
