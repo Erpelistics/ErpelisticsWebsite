@@ -9,11 +9,11 @@
     </a>
   {{ else }}
     <a class="btn" href="{{ .Site.Home.RelPermalink }}">
-      <!-- {{ with .Site.Params.logo }}
+      {{ with .Site.Params.logo }}
         <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="site-logo" />
       {{ else }}
         {{ .Site.Title }}
-      {{ end }} -->
+      {{ end }}
     </a>
   {{ end }}
 
