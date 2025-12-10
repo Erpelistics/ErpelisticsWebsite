@@ -25,7 +25,7 @@ theme = "hugo-theme-gallery"
     spotify = "https://open.spotify.com/artist/3AHW8bdZjGfrX4KkEfEAzd?si=Iq-g-zCNTI-UPdsIMlAyMw"
     soundcloud = "https://soundcloud.com/erpelistics"
     applemusic = "https://music.apple.com/us/artist/erpelistics/1806949593"
-    youtube = "https://www.youtube.com/"
+    youtube = "https://www.youtube.com/@Erpelistics"
     email = "mailto:erpelistics@web.de"
   [params.gallery]
     boxSpacing = 10
