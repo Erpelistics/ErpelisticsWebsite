@@ -11,6 +11,7 @@ resources:
       credit: "© Theresa Daschmann"
 ---
 
+#### "...gonna get loaded tonight...“
 <div class="soundcloud-embed">
   <iframe
       width="100%"
@@ -27,4 +28,6 @@ resources:
   </div>
 </div>
 
-Live Mitschnitte aller Songs des Auftritts im alten Rohrlager im Jahr 2023.
+Ein historischer Abend: Der allererste Auftritt mit Sänger Roberto! Dieser Mitschnitt aus dem 
+Alten Rohrlager in Mainz dokumentiert den Übergang der Erpelistics vom instrumentalen Trio 
+zum vierköpfigen Ohrwurm-Ungeheuer – inklusive authentischer Verspieler.

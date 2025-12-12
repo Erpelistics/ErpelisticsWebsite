@@ -12,8 +12,12 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-#### "Wenn die Welt untergeht, kleb mich an ihr fest"
+#### "...wenn die Welt untergeht, kleb mich an ihr fest..."
 
 {{< spotify type="track" id="3KnBsWPMt0GxN2SqJ2wvwo" >}}
 
-"Radikalisier mich" ist die zweite Single der Erpelistics aus ihrer Debut EP "Kulturelle Zwischennutzung"
+Ein peitschendes Gitarrenriff, Lyrics zwischen Bekennerschreiben und Liebesbrief und ein 
+absolut episches Outro im 15/8-Takt sind die Zutaten für diese bissige Indie-Punk-Hymne. 
+Ein Lied wie ein Rausch!
+
+Produzent: Arik Gailis, Mastering: Matthias Meeh

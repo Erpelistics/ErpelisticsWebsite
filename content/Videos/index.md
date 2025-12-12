@@ -5,7 +5,7 @@ weight: 4
 menu:
   main:
     weight: 4
-description: Bewegtbildmaterial aus dem Studio, von Konzerten und vielem mehr.
+description: Bewegtbildmaterial von Konzerten und aus dem Studio
 params:
   theme: dark
   hide_gallery: true
@@ -18,9 +18,27 @@ resources:
       hidden: false
 ---
 
-## „Enough Playing Around“ – Live im Schon Schön (2025):
-Dieses Video fängt die Erpelistics genau dort ein, wo ihre Musik am stärksten wirkt: auf der Bühne. Beim Konzert Moshpit Mainz Vol. 2 im Schon Schön liefert die Band eine energiegeladene Live-Version von „Enough Playing Around“, roh, unmittelbar und voller Spielfreude. Ein Mitschnitt, der zeigt, wie druckvoll, dynamisch und nahbar der erpelistische Sound im Konzertmoment wirklich ist.
+#### Live im SchonSchön (2025)
 
+**Recap:** Das erste Konzert des Jahres hatte es in sich – Im Februar 2025 tropfte im SchonSchön der 
+Schweiß von der Decke!
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://youtube.com/embed/Lvd9sR30Oe8?si=dwjabR-NcdlsUlOJ"
+    title="Schon Schön 2025 Recap"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+**Enough Playing Around:** Eine zucker-süße Aufnahme von einem zart-bitteren Song: „Enough Playing Aroung“
+handelt von der Absurdität moderner Lebensstile in Anbetracht der Klima-Katastrophe.
+Sinnbildich für den Stil der Erpelistics trifft hier Funk auf Rock, Melodie auf
+Sprechgesang, Ohnmacht auf Empörung. Dieser Mitschnitt fängt die Erpelistics genau dort 
+ein, wo ihre Musik am stärksten wirkt: auf der Bühne!
 
 <div class="video-container">
   <iframe width="560" height="315"
@@ -33,19 +51,10 @@ Dieses Video fängt die Erpelistics genau dort ein, wo ihre Musik am stärksten 
   </iframe>
 </div>
 
-## Erpelistics im Schon Schön 2025:
-<div class="video-container">
-  <iframe width="560" height="315"
-    src="https://youtube.com/embed/Lvd9sR30Oe8?si=dwjabR-NcdlsUlOJ"
-    title="Schon Schön 2025 Recap"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
-
-## Erpelistics auf dem Kurfürstenstraßenfest 2025:
+---
+#### Kurfürstenstraßenfest (2025)
+Im Juli 2025 wurde es heiß in der Kurfürstenstraße! Hier ein kleiner Zusammenschnitt unterlegt 
+mit „Fernbeziehung“. (Video & Schnitt: Victor Habes)
 <div class="video-container">
   <iframe width="560" height="315"
     src="https://youtube.com/embed/zH3Bkep34Ew?si=ftHZjNBZF5B_ryA2"
@@ -56,3 +65,10 @@ Dieses Video fängt die Erpelistics genau dort ein, wo ihre Musik am stärksten 
     allowfullscreen>
   </iframe>
 </div>
+
+<!-- ---
+#### Im Studio für „Kulturelle Zwischennutzung“
+Im September 2024 hatten die Erpelistics zum ersten Mal die Ehre, in einem professionellen 
+Studio aufzunehmen: Innerhalb von zwei schweißtreibenden Tagen im Spytunes Tonstudio war die EP 
+im Kasten!
+ -->

@@ -12,8 +12,13 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-#### "And you push until you hit the wall"
+#### "...to rule it all you´ll have to draw illusions of control..."
 
 {{< spotify type="track" id="0A2n5Y7loLylAHyTr7lATo" >}}
 
-"Control" ist die erste Single der Erpelistics aus ihrer Debut EP "Kulturelle Zwischennutzung"
+Die erste Single der Erpelistics strotz vor Energie! Kraftvolle Vocals, ein saftiger Bass und 
+eine funky Gitarre schaukeln sich in der Strophe gegenseitig hoch, um dann in einem
+verträumten Refrain gemeinsam dahin zu schweben. Eine Einladung zum Tanzen und zum 
+Loslassen!
+
+Produzent: Arik Gailis, Mastering: Matthias Meeh

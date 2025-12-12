@@ -11,14 +11,19 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-#### "Meine Freiheit hört nicht bei dir auf, sie fängt mit dir an"
+#### „...meine Freiheit hört nicht bei dir auf, sie fängt mit dir an...“
 
 {{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" >}}
 
-„Kulturelle Zwischennutzung“ bündelt die erpelistische Energie in kompaktester Form: sechs Songs, die zeigen, wie vielseitig eine klassische Bandbesetzung klingen kann, wenn man Mut zur Mischung hat. Die EP schlägt mühelos Brücken zwischen Eingängigkeit und Experiment, zwischen direktem Live-Feeling und sorgfältig geformter Klangarchitektur.
+Die Debut-EP „Kulturelle Zwischennutzung“ ist ein kompaktes Bündel erpelistischer Energie 
+und hört sich wie eine Reise durch musikalische Räume: Mal treibend, mal verträumt, mal 
+bissig – immer getragen von einem wärmenden Sound zwischen Live-Feeling und sorgfältig 
+geformter Klangarchitektur. Lyrisch bewegt sich die EP durch Momente unserer Gegenwart, 
+in denen Chaos und Zuversicht dicht beieinander liegen, und lässt dabei durch die immer 
+wieder eingestreuten instrumentalen Parts genug Platz für eigene Gedanken.
 
-Stilistisch wandert sie frei durch musikalische Räume – mal treibend, mal verträumt, mal bissig –, immer getragen von einem Sound, der Spannung und Wärme zugleich ausstrahlt. Lyrisch bewegt sich „Kulturelle Zwischennutzung“ durch die Themen unserer Gegenwart und fängt Momente ein, in denen Chaos und Zuversicht dicht beieinanderliegen.
+Sechs Songs, aus denen Hingabe, Haltung und Humor sprechen – persönlich, tanzbar, 
+druckvoll – unverkennbar erpelistisch!
 
-So entsteht ein Werk, das sowohl in verrauchten Kellerbühnen als auch unter freiem Himmel funktioniert: kompromisslos eigen, tanzbar, druckvoll – und unverkennbar Erpelistics.
-
+Produzent: Arik Gailis, Mastering: Matthias Meeh
 

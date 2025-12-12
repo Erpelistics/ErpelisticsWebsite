@@ -1,7 +1,7 @@
 ---
 layout: prose
 rss_ignore: true
-title: Für Veranstalter
+title: Für Veranstalter*innen
 menu:
   main:
     weight: 91
