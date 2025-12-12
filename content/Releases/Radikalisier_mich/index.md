@@ -12,7 +12,7 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-## -- "Wenn die Welt untergeht, kleb mich an ihr fest" --
+#### "Wenn die Welt untergeht, kleb mich an ihr fest"
 
 {{< spotify type="track" id="3KnBsWPMt0GxN2SqJ2wvwo" >}}
 

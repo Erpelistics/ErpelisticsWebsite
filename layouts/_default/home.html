@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ partial "home-title.html" . }}
+  <!-- {{ partialCached "home-social-icons.html" . }} -->
   {{ partial "featured.html" . }}
   {{ partial "home-description.html" . }}
   <section class="galleries">
@@ -7,4 +8,9 @@
       {{ partial "album-card.html" . }}
     {{ end }}
   </section>
+  {{ with .Content }}
+    <section class="prose">
+      {{ . }}
+    </section>
+  {{ end }}
 {{ end }}

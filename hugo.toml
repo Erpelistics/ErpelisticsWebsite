@@ -15,7 +15,8 @@ theme = "hugo-theme-gallery"
   defaultTheme = "dark"
   description = "Erpelistics - Ducking good music"
   title = "My Gallery"
-  logo = "images/logo.svg"   # relative to /static/
+  logo = "images/Erpelistics.svg"   # relative to /static/
+  smallLogo = "images/Erpelistics_small.svg"
   customCSS = ["css/custom.css"]
   [params.author]
     email = "user@example.com"

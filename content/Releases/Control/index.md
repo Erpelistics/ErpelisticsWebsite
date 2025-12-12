@@ -12,7 +12,7 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-## -- "And you push until you hit the wall" --
+#### "And you push until you hit the wall"
 
 {{< spotify type="track" id="0A2n5Y7loLylAHyTr7lATo" >}}
 

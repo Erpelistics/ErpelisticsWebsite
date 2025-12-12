@@ -1,7 +1,7 @@
 <header>
   {{ with .Parent }}
     <a class="btn" href="{{ .RelPermalink | default .Site.Home.RelPermalink }}" title="{{ .Title }}">
-      {{ with .Site.Params.logo }}
+      {{ with .Site.Params.smallLogo }}
         <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="site-logo" />
       {{ else }}
         {{ .Site.Title }}

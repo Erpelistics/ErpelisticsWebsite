@@ -155,6 +155,16 @@ hgroup {
   }
 }
 
+hgroup .home-logo {
+  display: block;
+  width: 100%;
+  max-width: 650px; /* Adjust based on your desired logo width */
+  height: auto;
+  margin: 0 auto;
+  /* Vertically align to top to eliminate extra space */
+  align-self: flex-start;
+}
+
 section.galleries {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -332,6 +342,15 @@ section.social-icons {
   gap: 1.5rem;
   justify-content: center;
   margin-top: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+section.home-social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }

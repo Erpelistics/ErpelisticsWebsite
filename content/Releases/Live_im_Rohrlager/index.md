@@ -11,8 +11,6 @@ resources:
       credit: "© Theresa Daschmann"
 ---
 
-Live Mitschnitte aller Songs des Auftritts im alten Rohrlager im Jahr 2023.
-
 <div class="soundcloud-embed">
   <iframe
       width="100%"
@@ -28,3 +26,5 @@ Live Mitschnitte aller Songs des Auftritts im alten Rohrlager im Jahr 2023.
     <a href="https://soundcloud.com/erpelistics/sets/live-im-alten-rohrlager" target="_blank">Live im Alten Rohrlager</a>
   </div>
 </div>
+
+Live Mitschnitte aller Songs des Auftritts im alten Rohrlager im Jahr 2023.
