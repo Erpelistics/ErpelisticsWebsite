@@ -48,15 +48,14 @@
 
         <div>
           <h2>{{ .Title }}</h2>
-          <p>
-            {{ with .Params.subtitle }}
+          <p class="subtitle primary">
+            {{ with .Params.primarySubtitle }}
               {{ . }}
-            {{ else }}
-              {{ if gt $gallery.albumCount 0 }}
-                {{ T "albumCount" (dict "count" ($gallery.albumCount | lang.FormatNumber 0) "photoCount" ($gallery.imageCount | lang.FormatNumber 0 | lang.Translate "photoCount")) }}
-              {{ else }}
-                {{ T "photoCount" ($gallery.imageCount | lang.FormatNumber 0) }}
-              {{ end }}
+            {{ end }}
+          </p>
+          <p class="subtitle secondary">
+            {{ with .Params.secondarySubtitle }}
+              {{ . }}
             {{ end }}
           </p>
         </div>

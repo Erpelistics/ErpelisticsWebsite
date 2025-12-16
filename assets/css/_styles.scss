@@ -390,16 +390,20 @@ section.featured {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 0.5rem;
     background-image: linear-gradient(to top, RGB(0 0 0 / 0.8) 10%, transparent 50%);
     padding: 1.5rem;
     width: 100%;
     height: 100%;
+    position: relative;
 
     & > h2 {
       font-weight: 600;
       font-size: clamp(1.5rem, calc(1.375rem + 0.556vw), 1.875rem);
       line-height: 1.2;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
     }
 
     & > p {
@@ -413,6 +417,66 @@ section.featured {
       0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
+}
+
+.featured-card .subtitle {
+  font-size: 0.875rem;
+  line-height: 1.4286;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.featured-card .subtitle.primary {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured-card .subtitle.secondary {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+
+  opacity: 0;
+  transform: translateY(8px);
+
+  font-size: 1rem;
+  line-height: 1.5;
+
+  text-align: justify;      /* <--- this makes the text justified */
+  hyphens: auto;            /* optional: automatic hyphenation for German */
+  overflow-wrap: break-word; /* ensures long words wrap nicely */
+
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* limit height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.featured-card:hover .subtitle.primary,
+.featured-card:focus-visible .subtitle.primary {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.featured-card:hover .subtitle.secondary,
+.featured-card:focus-visible .subtitle.secondary {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured-card:hover h2,
+.featured-card:focus-visible h2 {
+  opacity: 0;
+}
+
+.featured-card:hover > div {
+  background-image: linear-gradient(
+    to top,
+    RGB(0 0 0 / 0.9) 30%,
+    transparent 80%
+  );
 }
 
 nav.categories {
