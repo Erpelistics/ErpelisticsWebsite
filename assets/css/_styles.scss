@@ -448,35 +448,42 @@ section.featured {
   hyphens: auto;            /* optional: automatic hyphenation for German */
   overflow-wrap: break-word; /* ensures long words wrap nicely */
 
-  display: -webkit-box;
-  -webkit-line-clamp: 10; /* limit height */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  display: none;  /* hide by default */
+
 }
 
-.featured-card:hover .subtitle.primary,
-.featured-card:focus-visible .subtitle.primary {
-  opacity: 0;
-  transform: translateY(-4px);
-}
+@media (min-width: 640px) {
 
-.featured-card:hover .subtitle.secondary,
-.featured-card:focus-visible .subtitle.secondary {
-  opacity: 1;
-  transform: translateY(0);
-}
+  .featured-card .subtitle.secondary {
+    display: -webkit-box;
+      -webkit-line-clamp: 10; /* limit height */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+  }
+  .featured-card:hover .subtitle.primary,
+  .featured-card:focus-visible .subtitle.primary {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
 
-.featured-card:hover h2,
-.featured-card:focus-visible h2 {
-  opacity: 0;
-}
+  .featured-card:hover .subtitle.secondary,
+  .featured-card:focus-visible .subtitle.secondary {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-.featured-card:hover > div {
-  background-image: linear-gradient(
-    to top,
-    RGB(0 0 0 / 0.9) 30%,
-    transparent 80%
-  );
+  .featured-card:hover h2,
+  .featured-card:focus-visible h2 {
+    opacity: 0;
+  }
+
+  .featured-card:hover > div {
+    background-image: linear-gradient(
+      to top,
+      RGB(0 0 0 / 0.9) 30%,
+      transparent 80%
+    );
+  }
 }
 
 nav.categories {
