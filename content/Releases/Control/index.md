@@ -21,4 +21,5 @@ eine funky Gitarre schaukeln sich in der Strophe gegenseitig hoch, um dann in ei
 verträumten Refrain gemeinsam dahin zu schweben. Eine Einladung zum Tanzen und zum 
 Loslassen!
 
-Produzent: Arik Gailis, Mastering: Matthias Meeh
+Produzent: [Arik Gailis](https://www.arikunmuted.de/) \
+Mastering: [Matthias Meeh](https://matthias-meeh.com/)

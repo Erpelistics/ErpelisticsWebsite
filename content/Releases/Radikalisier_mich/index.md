@@ -20,4 +20,5 @@ Ein peitschendes Gitarrenriff, Lyrics zwischen Bekennerschreiben und Liebesbrief
 absolut episches Outro im 15/8-Takt sind die Zutaten für diese bissige Indie-Punk-Hymne. 
 Ein Lied wie ein Rausch!
 
-Produzent: Arik Gailis, Mastering: Matthias Meeh
+Produzent: [Arik Gailis](https://www.arikunmuted.de/) \
+Mastering: [Matthias Meeh](https://matthias-meeh.com/)

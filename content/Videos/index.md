@@ -54,7 +54,7 @@ ein, wo ihre Musik am stärksten wirkt: auf der Bühne!
 ---
 #### Kurfürstenstraßenfest (2025)
 Im Juli 2025 wurde es heiß in der Kurfürstenstraße! Hier ein kleiner Zusammenschnitt unterlegt 
-mit „Fernbeziehung“. (Video & Schnitt: Victor Habes)
+mit „Fernbeziehung“. (Video & Schnitt: [Victor Habes](https://www.victor-habes-vicproductions.com/))
 <div class="video-container">
   <iframe width="560" height="315"
     src="https://youtube.com/embed/zH3Bkep34Ew?si=ftHZjNBZF5B_ryA2"

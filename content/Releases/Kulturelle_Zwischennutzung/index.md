@@ -25,5 +25,6 @@ wieder eingestreuten instrumentalen Parts genug Platz für eigene Gedanken.
 Sechs Songs, aus denen Hingabe, Haltung und Humor sprechen – persönlich, tanzbar, 
 druckvoll – unverkennbar erpelistisch!
 
-Produzent: Arik Gailis, Mastering: Matthias Meeh
+Produzent: [Arik Gailis](https://www.arikunmuted.de/) \
+Mastering: [Matthias Meeh](https://matthias-meeh.com/)
 
