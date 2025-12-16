@@ -165,6 +165,11 @@ hgroup .home-logo {
   align-self: flex-start;
 }
 
+main > hgroup {
+  margin-bottom: 2rem; /* or 0 */
+  margin-top: 0;
+}
+
 section.galleries {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -353,6 +358,11 @@ section.home-social-icons {
   justify-content: center;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+}
+
+main > section.home-social-icons {
+  margin-bottom: 1.5rem; /* or 0 */
+  margin-top: 0;
 }
 
 section.featured {
