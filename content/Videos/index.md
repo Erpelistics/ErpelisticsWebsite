@@ -66,9 +66,30 @@ mit „Fernbeziehung“. (Video & Schnitt: [Victor Habes](https://www.victor-hab
   </iframe>
 </div>
 
-<!-- ---
+---
 #### Im Studio für „Kulturelle Zwischennutzung“
 Im September 2024 hatten die Erpelistics zum ersten Mal die Ehre, in einem professionellen 
 Studio aufzunehmen: Innerhalb von zwei schweißtreibenden Tagen im Spytunes Tonstudio war die EP 
 im Kasten!
- -->
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/SEkbnn3Y7do?si=TM7r1hqhTccIezr6"
+    title="Kulturelle Zwischennutzung EP TEASER"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/4WlqECrCRto?si=aSkW14U9vTroD2L8"
+    title="Kulturelle Zwischennutzung EP OUT NOW!"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
