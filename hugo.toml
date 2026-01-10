@@ -17,6 +17,7 @@ theme = "hugo-theme-gallery"
   title = "My Gallery"
   logo = "images/Erpelistics.svg"   # relative to /static/
   smallLogo = "images/Erpelistics_small.svg"
+  bandsintown_artist = "id_15627698"
   customCSS = ["css/custom.css"]
   [params.author]
     email = "user@example.com"

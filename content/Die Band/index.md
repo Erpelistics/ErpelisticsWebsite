@@ -32,9 +32,6 @@ resources:
   - src: Band_4.png
     params:
       credit: "© Jojo - Farytaleish_photography"
-  - src: Band_4.png
-    params:
-      credit: "© Jojo - Farytaleish_photography"
   - src: Band_5.png
     params:
       credit: "© Tanja Upravitelev"
