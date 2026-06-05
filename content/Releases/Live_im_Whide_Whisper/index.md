@@ -3,7 +3,7 @@ date: 2023-01-12
 title: Live im Wide Whisper
 categories: ["Live Sets"]
 subtitle: "Live Set - 2023"
-weight: 5
+weight: 7
 params:
   private: true
 resources:

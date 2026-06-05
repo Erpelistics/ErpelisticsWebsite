@@ -3,7 +3,7 @@ date: 2023-01-12
 title: Live im alten Rohrlager
 categories: ["Live Sets"]
 subtitle: "Live Set - 2023"
-weight: 4
+weight: 6
 resources:
   - src: Live_im_Rohrlager.jpeg
     params:

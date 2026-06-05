@@ -2,7 +2,7 @@
 title: Control
 categories: ["Singles"]
 subtitle: "Single  - 2025"
-weight: 2
+weight: 4
 params:
   theme: dark
 resources:
@@ -12,7 +12,7 @@ resources:
       credit: "© Caroline Fischer"
 ---
 
-#### "...to rule it all you´ll have to draw illusions of control..."
+#### "...you take your aim, then take a breath, the arrow leaves the bow..."
 
 {{< spotify type="track" id="0A2n5Y7loLylAHyTr7lATo" >}}
 

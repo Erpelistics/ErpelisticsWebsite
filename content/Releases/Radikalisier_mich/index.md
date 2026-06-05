@@ -2,7 +2,7 @@
 title: Radikalisier mich
 categories: ["Singles"]
 subtitle: "Single - 2025"
-weight: 3
+weight: 5
 params:
   theme: dark
 resources:

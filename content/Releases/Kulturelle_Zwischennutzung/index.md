@@ -3,7 +3,7 @@ date: 2023-01-12
 title: Kulturelle Zwischennutzung
 categories: ["EPs & LPs"]
 subtitle: "EP - 2025"
-weight: 1
+weight: 3
 resources:
   - src: Kulturelle_Zwischennutzung_Cover.jpeg
     params:
