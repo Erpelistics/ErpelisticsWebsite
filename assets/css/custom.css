@@ -226,3 +226,29 @@
   display: block;
   border: none;
 }
+
+@media (min-width: 1024px) {
+  body > header {
+    min-height: 5rem;
+    padding: 0.75rem;
+  }
+
+  body > header .btn {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  body > header .btn-square {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  body > header .btn-square svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-logo {
+    height: 54px;
+  }
+}
