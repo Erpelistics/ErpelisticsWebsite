@@ -38,6 +38,15 @@ resources:
   - src: Band_6.jpeg
     params:
       credit: "© Nele Drathen"
+  - src: Band_7.jpg
+    params:
+      credit: "© Tanja Upravitelev"
+  - src: Band_8.jpg
+    params:
+      credit: "© Theresa Daschmann"
+  - src: Band_9.jpg
+    params:
+      credit: "© ..."
   
 ---
 

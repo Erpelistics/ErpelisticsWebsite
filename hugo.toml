@@ -1,15 +1,25 @@
 baseURL = "http://localhost:1313/"
 
 copyright = "© Erpelistics"
-defaultContentLanguage = "en"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
-languageCode = "de"
 timeZone = "Europe/Berlin"
 timeout = "120s"
 title = "Erpelistics"
 
 theme = "hugo-theme-gallery"
+
+[languages.de]
+  languageCode = "de"
+  weight = 1
+  title = "Erpelistics"
+
+[languages.en]
+  languageCode = "en"
+  weight = 2
+  title = "Erpelistics"
 
 [params]
   defaultTheme = "dark"
@@ -61,4 +71,3 @@ theme = "hugo-theme-gallery"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-

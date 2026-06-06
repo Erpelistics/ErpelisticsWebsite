@@ -4,7 +4,7 @@
       {{ with .Site.Params.smallLogo }}
         <img src="{{ . | relURL }}" alt="{{ $.Site.Title }}" class="site-logo" />
       {{ else }}
-        {{ .Site.Title }}
+        {{ .Title }}
       {{ end }}
     </a>
   {{ else }}
