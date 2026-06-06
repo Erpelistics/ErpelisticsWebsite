@@ -9,7 +9,7 @@ menu:
     name: "Releases"
 description: "Here you can find all released albums, EPs, singles and live sets."
 resources:
-  - src: Kulturelle_Zwischennutzung_Cover.jpeg
+  - src: WasMachenSachen_Cover.jpeg
     params:
       cover: true
 ---

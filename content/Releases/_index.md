@@ -8,7 +8,7 @@ menu:
     weight: 2
 description: "Hier findest du alle veröffentlichten Alben, EPs, Singles und Live-Sets."
 resources:
-  - src: Kulturelle_Zwischennutzung_Cover.jpeg
+  - src: WasMachenSachen_Cover.jpeg
     params:
       cover: true
 ---
