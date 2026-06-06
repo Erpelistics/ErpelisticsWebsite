@@ -63,7 +63,7 @@ In July 2025 it got hot on Kurfürstenstraße! Here's a short cut set to "Fernbe
 
 ---
 #### In the Studio for "Kulturelle Zwischennutzung"
-In September 2024, Erpelistics had the honour of recording in a professional studio for the first time: within two sweaty days at Spytunes recording studio, the EP was in the can!
+In September 2024, Erpelistics had the honour of recording in a professional studio for the first time: within two sweaty days at Spytunes recording studio, the EP was on tape!
 <div class="video-container">
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/SEkbnn3Y7do?si=TM7r1hqhTccIezr6"

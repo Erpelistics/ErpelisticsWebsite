@@ -16,7 +16,7 @@ resources:
 {{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" >}}
 
 Die Debut-EP „Kulturelle Zwischennutzung“ ist ein kompaktes Bündel erpelistischer Energie 
-und hört sich wie eine Reise durch musikalische Räume: Mal treibend, mal verträumt, mal 
+und hört sich wie eine Reise durch musikalische Räume an: Mal treibend, mal verträumt, mal 
 bissig – immer getragen von einem wärmenden Sound zwischen Live-Feeling und sorgfältig 
 geformter Klangarchitektur. Lyrisch bewegt sich die EP durch Momente unserer Gegenwart, 
 in denen Chaos und Zuversicht dicht beieinander liegen, und lässt dabei durch die immer 
