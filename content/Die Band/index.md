@@ -46,7 +46,7 @@ resources:
       credit: "© Theresa Daschmann"
   - src: Band_9.jpg
     params:
-      credit: "© ..."
+      credit: "© Liska Märtens"
   
 ---
 
