@@ -1,0 +1,18 @@
+{{ $cats := slice }}
+{{ range .Pages }}
+  {{ range .Params.categories }}
+    {{ $cats = $cats | append . }}
+  {{ end }}
+{{ end }}
+{{ $cats = $cats | uniq }}
+{{ with $cats }}
+  <nav class="categories">
+    <ul>
+      {{ range site.Taxonomies.categories }}
+        {{ if in $cats .Page.Title }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}
