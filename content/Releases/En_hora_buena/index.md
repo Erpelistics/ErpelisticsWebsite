@@ -4,7 +4,7 @@ title: En Hora Buena
 categories: ["Live Sets", "Singles"]
 subtitle: "PMK Live Sessions - 2025"
 weight: 1
-private: true
+private: false
 resources:
   - src: Enhorabuena_Cover.jpg
     params:
@@ -14,7 +14,7 @@ resources:
 
 #### "...Radiohead tuned to no sound, hearts' ears slammed down onto the ground..."
 
-{{< spotify type="track" id="1P7jJUrhd6ZkaPWLe20ykM" >}}
+{{< spotify type="track" id="5LBdHlPxW3ziLe9QYOUVZ9" >}}
 
 
 Produzent: [Arik Gailis](https://www.arikunmuted.de/) \

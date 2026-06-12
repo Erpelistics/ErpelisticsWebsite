@@ -8,7 +8,7 @@ menu:
     weight: 2
 description: "Hier findest du alle veröffentlichten Alben, EPs, Singles und Live-Sets."
 resources:
-  - src: WasMachenSachen_Cover.jpeg
+  - src: Enhorabuena_Cover.jpeg
     params:
       cover: true
 ---
