@@ -213,7 +213,6 @@
 }
 
 .video-container {
-  max-width: 800px;      /* match gallery max-width */
   margin: 2rem auto;     /* center and add vertical spacing */
   border-radius: 8px;    /* match card/gallery rounding */
   overflow: hidden;      /* crop corners nicely */
