@@ -1,27 +1,55 @@
 ---
 date: 2026-08-26
 title: Festival-Bewerbung
-description: "Booking-Unterlagen der Erpelistics: Fotos, Musik-Ausschnitte und Showreel für Festivalanfragen."
+description: "Wir wollen auf eurem Festival spielen!"
 params:
   private: true
   hide_gallery: false
-  title_template: "Bewerbung für {name}"
+  title_template: "Bewerbung für das {name} Festival"
 resources:
-  # Bandfotos hier eintragen, sobald sie im Ordner liegen, z. B.:
-  # - src: Erpelistics_Bewerbung_1.jpg
-  #   params:
-  #     credit: "© Fotograf:in"
+  - src: Band_1.png
+    params:
+      credit: "© Tanja Upravitelev"
+  - src: Band_2.png
+    params:
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Band_3.png
+    params:
+      credit: "© Victor Habes"
+  - src: Band_4.png
+    params:
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Band_5.png
+    params:
+      credit: "© Tanja Upravitelev"
+  - src: Band_6.jpeg
+    params:
+      credit: "© Nele Drathen"
+  - src: Band_7.jpg
+    params:
+      credit: "© Tanja Upravitelev"
+  - src: Band_8.jpg
+    params:
+      credit: "© Theresa Daschmann"
 ---
 
 {{< personalize-script >}}
 
-<p data-template="Liebes {name}-Team,">Liebes Festival-Team,</p>
+<p><strong data-template="Liebes {name}-Team,">Liebes Festival-Team,</strong></p>
 
-vielen Dank für euer Interesse an den Erpelistics! Auf dieser Seite findet ihr alles, was ihr für eure Entscheidung braucht: Fotos, Musik-Ausschnitte, ein kurzes Showreel und die wichtigsten Infos zur Band.
+wir haben riesige Lust auf eurem Festival zu spielen! Damit ihr euch einen Eindruck 
+von uns machen könnt, haben wir auf dieser Seite alle wichtigen Informationen über uns
+zusammen gestellt. Falls ihr noch mehr Infos benötigt oder noch Fragen offen bleiben,
+könnt ihr euch natürlich jederzeit bei uns melden. Wir freuen uns auf eure Rückmeldung!
+
+Erpelistische Grüße,
+
+Roberto, Julius, David, Constantin
+
 
 ---
 
-#### Über die Band
+#### Über uns
 
 Was als zielloses Jammen dreier Jugendfreunde in einem Mainzer WG-Zimmer begann, fand 
 ausgerechnet während der Corona-Pandemie seine konkrete Form als Bandprojekt. Das
@@ -51,34 +79,32 @@ Mit einem eigenen Sound, einem albernen Bandnamen und mehr Songs als InstagramB
 
 {{< spotify type="artist" id="3AHW8bdZjGfrX4KkEfEAzd" >}}
 
-<!-- Für einen einzelnen Track statt des ganzen Profils:
-{{< spotify type="track" id="TRACK_ID_HIER" >}}
--->
-
 ---
 
 #### Video-Showreel
 
-<!-- Sobald ein Showreel existiert, hier einfügen (Muster wie in den Videos der Hauptseite):
 <div class="video-container">
   <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/VIDEO_ID_HIER"
-    title="Erpelistics Showreel"
+    src="https://youtube.com/embed/Lvd9sR30Oe8?si=dwjabR-NcdlsUlOJ"
+    title="Schon Schön 2025 Recap"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
   </iframe>
 </div>
--->
 
 ---
 
 #### Kontakt & Booking
 
-**E-Mail:** [erpelistics@web.de](mailto:erpelistics@web.de)
+Für Rückfragen oder Rückmeldung bezüglich unserer Festivalbewerbung könnt ihr uns über 
+die folgende E-Mail Adresse erreichen. Außerdem könnt ihr bereits unseren Techrider und
+unser Pressekit downloaden.
 
-<!-- Technical Rider / Stage Plan hier ergänzen, sobald vorhanden -->
+#### [erpelistics@web.de](mailto:erpelistics@web.de)
 
----
-**Fotos**: [Victor Habes](https://www.victor-habes-vicproductions.com/), [Tanja Upravitelev](http://tup-arte.com/), [Jojo - Farytaleish_photography](https://linktr.ee/jojofairy), [Nele Drathen](https://www.instagram.com/_nelson.ne_/)
+| Downloads                 |                                   |
+|---------------------------|---------------------------------------------------|
+| [Tech-Rider.pdf](/downloads/Techrider_Erpelistics.pdf) | Technische Anforderungen \[141 kB\]    |
+| [Pressekit.zip](/downloads/Pressekit.zip)               | Pressekit \[14.4 MB\]      |
