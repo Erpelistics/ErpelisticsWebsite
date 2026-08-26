@@ -94,18 +94,29 @@ another attribute, no script change needed.
 
 ### Wiring it up
 
-Both `index.md` and `index.en.md` reference the same bundle-relative file:
+**Confirmed during implementation (superseding the paragraph originally
+here):** Hugo does *not* duplicate a shared, non-language-suffixed page
+bundle resource into every translated page's output directory. Per Hugo's
+multilingual-bundles model, such a resource is inherited/shared and
+published exactly once, under the bundle of the language with the lowest
+`weight` — German (`weight = 1`) in this site's `hugo.toml`. This was
+verified three ways: a clean production build of this page, an
+already-existing identical pattern in `content/Konzerte/` (shared images
+resolve to `/konzerte/...`, not `/en/concerts/...`), and Hugo's own
+multilingual-bundles documentation.
+
+Both `index.md` and `index.en.md` therefore reference the script via its
+one real, stable published location — an absolute path into the German
+page's output directory, not a bundle-relative path:
 
 ```html
-<script src="personalize.js" defer></script>
+<script src="/festival-bewerbung/personalize.js" defer></script>
 ```
 
-placed once near the top of each file's markdown body. Hugo duplicates
-non-language-specific bundle resources into each translated page's output
-directory, so the relative reference resolves correctly for both
-`/festival-bewerbung/personalize.js` and
-`/en/festival-application/personalize.js` — to be confirmed by inspecting
-the production build output during implementation.
+placed once near the top of each file's markdown body. This still means
+exactly one physical `personalize.js` source file, and no duplicated
+logic (Requirements #4) — the fix is only in how each page *references*
+that one file, not in how many copies exist.
 
 ## Testing
 
