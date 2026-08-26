@@ -14,7 +14,7 @@ resources:
   #     credit: "© Photographer"
 ---
 
-<script src="/festival-bewerbung/personalize.js" defer></script>
+{{< personalize-script >}}
 
 <p data-template="Dear {name} Team,">Dear Festival Team,</p>
 

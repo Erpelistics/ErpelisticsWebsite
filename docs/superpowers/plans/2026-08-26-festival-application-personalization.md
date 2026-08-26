@@ -222,7 +222,7 @@ to:
 
 (The line `thank you for your interest...` stays exactly as it is, as its own separate paragraph. Note the absolute path pointing at the German bundle's output directory — see the correction note at the top of this task; this is intentional and correct for the English page too, since that's the only place Hugo publishes the file.)
 
-- [ ] **Step 5: Run the check again — verify the script is duplicated into both language outputs and the markup is correct**
+- [ ] **Step 5: Run the check again — verify the script resolves correctly from both language pages and the markup is correct**
 
 ```bash
 hugo --minify --baseURL "https://erpelistics.band/" > /dev/null

@@ -5,6 +5,6 @@
   if (!festival) return;
 
   document.querySelectorAll("[data-template]").forEach((el) => {
-    el.textContent = el.dataset.template.replace("{name}", festival);
+    el.textContent = el.dataset.template.replaceAll("{name}", () => festival);
   });
 })();

@@ -13,7 +13,7 @@ resources:
   #     credit: "© Fotograf:in"
 ---
 
-<script src="/festival-bewerbung/personalize.js" defer></script>
+{{< personalize-script >}}
 
 <p data-template="Liebes {name}-Team,">Liebes Festival-Team,</p>
 

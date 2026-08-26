@@ -121,8 +121,10 @@ that one file, not in how many copies exist.
 ## Testing
 
 - `hugo --minify --baseURL "https://erpelistics.band/"`; confirm
-  `personalize.js` exists under both `public/festival-bewerbung/` and
-  `public/en/festival-application/`.
+  `personalize.js` exists under `public/festival-bewerbung/` (its one
+  real published location — see Wiring it up above; it will never exist
+  under `public/en/festival-application/`, by design), and that both
+  pages' rendered `<script>` tag resolves to that same file.
 - `hugo server`; manually check:
   - `/festival-bewerbung/?festival=Testival` → heading and greeting show
     "Testival".
