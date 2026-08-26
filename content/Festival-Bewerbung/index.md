@@ -5,6 +5,7 @@ description: "Booking-Unterlagen der Erpelistics: Fotos, Musik-Ausschnitte und S
 params:
   private: true
   hide_gallery: false
+  title_template: "Bewerbung für {name}"
 resources:
   # Bandfotos hier eintragen, sobald sie im Ordner liegen, z. B.:
   # - src: Erpelistics_Bewerbung_1.jpg
@@ -12,7 +13,9 @@ resources:
   #     credit: "© Fotograf:in"
 ---
 
-Liebes Festival-Team,
+<script src="/festival-bewerbung/personalize.js" defer></script>
+
+<p data-template="Liebes {name}-Team,">Liebes Festival-Team,</p>
 
 vielen Dank für euer Interesse an den Erpelistics! Auf dieser Seite findet ihr alles, was ihr für eure Entscheidung braucht: Fotos, Musik-Ausschnitte, ein kurzes Showreel und die wichtigsten Infos zur Band.
 

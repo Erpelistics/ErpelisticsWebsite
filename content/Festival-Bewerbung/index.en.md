@@ -6,6 +6,7 @@ description: "Erpelistics booking materials: photos, music snippets and showreel
 params:
   private: true
   hide_gallery: false
+  title_template: "Application for {name}"
 resources:
   # Add band photos here once they're in this folder, e.g.:
   # - src: Erpelistics_Bewerbung_1.jpg
@@ -13,7 +14,9 @@ resources:
   #     credit: "© Photographer"
 ---
 
-Dear Festival Team,
+<script src="/festival-bewerbung/personalize.js" defer></script>
+
+<p data-template="Dear {name} Team,">Dear Festival Team,</p>
 
 thank you for your interest in Erpelistics! On this page you'll find everything you need for your decision: photos, music snippets, a short showreel and the key facts about the band.
 
