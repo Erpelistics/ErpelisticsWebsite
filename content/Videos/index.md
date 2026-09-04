@@ -18,6 +18,47 @@ resources:
       hidden: false
 ---
 
+#### PMK Live Sessions (2025)
+Im August 2025 hatten wir das große Vergnügen im PMK in Innsbruck drei neue Lieder als Live Session aufnehmen zu können. Vielen Dank an Arik Gailis, Victor Habes und das PMK!
+
+Producer: [Arik Gailis](https://www.arikunmuted.de/),
+Mastering: [Victor Habes](https://www.victor-habes-vicproductions.com/),
+Video: [Victor Habes](https://www.victor-habes-vicproductions.com/)
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/_bjgOq32xdo?si=537JJI_r0W9-eWgN"
+    title="Delimberance"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/vxqq8Cr7Zok?si=xHC8G4qBVZwX81Gw"
+    title="Was Machen Sachen"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/VyC303CHyQQ?si=MtfiG5FAz9bGIbVH"
+    title="En Hora Buena"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
 #### Live im SchonSchön (2025)
 
 **Recap:** Das erste Konzert des Jahres hatte es in sich – Im Februar 2025 tropfte im SchonSchön der 
