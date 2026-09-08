@@ -59,6 +59,7 @@
 .prose table td {
   padding: 1rem 1.25rem;
   text-align: left;
+  vertical-align: middle; /* keeps buttons centred instead of stretched in tall rows */
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
@@ -115,6 +116,8 @@
 /* Ticket button styling */
 .prose table a {
   display: inline-block;
+  white-space: nowrap;      /* never break the label inside the button */
+  overflow-wrap: normal;
   padding: 0.35rem 0.7rem;
   background: #666;
   color: #fff;
@@ -132,6 +135,33 @@
 
 .prose table td:last-child {
   text-align: right; /* aligns content to the right */
+}
+
+/* The button column shrinks to the button, the text column takes the rest */
+.prose table td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.prose table td:not(:first-child) {
+  overflow-wrap: break-word; /* long descriptions wrap between words, never mid-word */
+}
+
+/* Narrow screens: scale the table down so the button still fits on one line */
+@media (max-width: 640px) {
+  .prose table {
+    font-size: 0.9rem;
+  }
+
+  .prose table th,
+  .prose table td {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .prose table a {
+    padding: 0.3rem 0.55rem;
+    font-size: 0.85rem;
+  }
 }
 
 
