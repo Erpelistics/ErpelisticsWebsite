@@ -89,6 +89,17 @@ Roberto, Julius, David, Constantin
   </iframe>
 </div>
 
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/vG51Cj-VXnc?si=JW2zVHxRN9hFW2zQ"
+    title="Erpelistics - Enough Playing Around (Schon Schön 2025)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ---
 
 #### Kontakt & Booking
