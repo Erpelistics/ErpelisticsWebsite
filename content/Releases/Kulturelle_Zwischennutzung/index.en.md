@@ -13,7 +13,7 @@ resources:
 
 #### „...meine Freiheit hört nicht bei dir auf, sie fängt mit dir an..."
 
-{{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" >}}
+{{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" height="video">}}
 
 The debut EP "Kulturelle Zwischennutzung" is a compact bundle of erpelistic energy — a journey through musical spaces: driving at times, dreamy at others, biting when it needs to be — always carried by a warm sound somewhere between live-feeling and carefully crafted sonic architecture. Lyrically, the EP moves through moments of our present day, where chaos and hope sit side by side, with recurring instrumental passages that leave enough room for your own thoughts.
 

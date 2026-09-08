@@ -3,9 +3,9 @@ import PhotoSwipe from "./photoswipe/photoswipe.esm.js";
 import PhotoSwipeDynamicCaption from "./photoswipe/photoswipe-dynamic-caption-plugin.esm.min.js";
 import * as params from "@params";
 
-const gallery = document.getElementById("gallery");
+const galleries = document.querySelectorAll(".gallery-grid");
 
-if (gallery) {
+galleries.forEach((gallery) => {
 
   const lightbox = new PhotoSwipeLightbox({
     gallery,
@@ -72,7 +72,7 @@ if (gallery) {
 
   lightbox.init();
 
-  // Open from hash if present
+  // Open from hash if present (only the gallery containing that image reacts)
   if (window.location.hash.substring(1).length > 1) {
     const target = window.location.hash.substring(1);
     const items = gallery.querySelectorAll("a");
@@ -83,4 +83,4 @@ if (gallery) {
       }
     }
   }
-}
+});

@@ -1,9 +1,26 @@
 import justifiedLayout from "./justified-layout.js";
 import * as params from "@params";
 
-const gallery = document.getElementById("gallery");
+const galleries = document.querySelectorAll(".gallery-grid");
 
-if (gallery) {
+// Expose the page width so galleries rendered inside the prose column can break
+// out to full width. It is measured from <main>, i.e. exactly the width the
+// top-level gallery section spans, so every gallery gets the identical
+// container width. Re-measured before each layout pass, which also covers the
+// scrollbar appearing once the galleries expand.
+function updatePageWidth() {
+  const ref = document.querySelector("main") || document.documentElement;
+  document.documentElement.style.setProperty("--page-width", ref.getBoundingClientRect().width + "px");
+}
+
+function getTargetRowHeight() {
+  const width = window.innerWidth;
+  if (width < 480) return 120; // phones
+  if (width < 768) return 180; // small tablets
+  return params.targetRowHeight || 288;
+}
+
+galleries.forEach((gallery) => {
   let containerWidth = 0;
   const items = gallery.querySelectorAll(".gallery-item");
 
@@ -14,14 +31,8 @@ if (gallery) {
     return parseFloat(img.getAttribute("width")) / parseFloat(img.getAttribute("height"));
   });
 
-  function getTargetRowHeight() {
-    const width = window.innerWidth;
-    if (width < 480) return 120; // phones
-    if (width < 768) return 180; // small tablets
-    return params.targetRowHeight || 288;
-  }
-
   function updateGallery() {
+    updatePageWidth();
     if (containerWidth === gallery.getBoundingClientRect().width) return;
     containerWidth = gallery.getBoundingClientRect().width;
 
@@ -54,4 +65,4 @@ if (gallery) {
   // Call twice to adjust for scrollbars appearing after first call
   updateGallery();
   updateGallery();
-}
+});

@@ -15,6 +15,17 @@ resources:
 
 {{< spotify type="track" id="1P7jJUrhd6ZkaPWLe20ykM" >}}
 
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/_bjgOq32xdo?si=537JJI_r0W9-eWgN"
+    title="Delimberance"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
 Produzent: [Arik Gailis](https://www.arikunmuted.de/) \
-Mastering: [Victor Habes](https://www.victor-habes-vicproductions.com/)
+Mastering: [Victor Habes](https://www.victor-habes-vicproductions.com/)  \
+Video: [Victor Habes](https://www.victor-habes-vicproductions.com/)

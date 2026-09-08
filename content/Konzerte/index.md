@@ -1,7 +1,7 @@
 ---
 title: Konzerte
 subtitle: "Erpelistics Live"
-description: Hier findest du alle Konzerte und Events der Erpelistics. Sichere dir jetzt deine Tickets!
+description: Hier findest du alle Infos zu Konzerten und Events von uns.
 weight: 3
 menu:
   main:
@@ -9,11 +9,11 @@ menu:
 resources:
   - src: Konzerte2.png
     params:
-      credit: "© Theresa Daschmann"
+      cover: true
+      credit: "© Anna Filtzinger"
   - src: Konzerte3.png
     params:
-      cover: true
-      credit: "© Tanja Upravitelev"
+      credit: "©"
   - src: Konzerte4.png
     params:
       credit: "© Theresa Daschmann"

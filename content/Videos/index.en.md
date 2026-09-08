@@ -75,7 +75,7 @@ Video: [Victor Habes](https://www.victor-habes-vicproductions.com/)
   </iframe>
 </div>
 
-**Enough Playing Around:** A sugar-sweet recording of a bittersweet song: "Enough Playing Around" is about the absurdity of modern lifestyles in the face of the climate crisis. Emblematic of Erpelistics' style, funk meets rock here, melody meets spoken word, helplessness meets outrage. This recording captures Erpelistics exactly where their music hits hardest: on stage!
+**Enough Playing Around:** A sweet recording of a bittersweet song: "Enough Playing Around" is about the absurdity of modern lifestyles in the face of the climate crisis. Emblematic of Erpelistics' style, funk meets rock here, melody meets spoken word, helplessness meets outrage. This recording captures Erpelistics exactly where their music hits hardest: on stage!
 
 <div class="video-container">
   <iframe width="560" height="315"
@@ -87,6 +87,19 @@ Video: [Victor Habes](https://www.victor-habes-vicproductions.com/)
     allowfullscreen>
   </iframe>
 </div>
+
+**DreiTonTango:**
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/dw22pnw3Od8?si=So3gSsQ-8E1SHJF_"
+    title="Erpelistics - Enough Playing Around (Schon Schön 2025)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 ---
 #### Kurfürstenstraßenfest (2025)

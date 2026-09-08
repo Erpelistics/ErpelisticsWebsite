@@ -1,7 +1,18 @@
-<div class="spotify-embed">
+{{/*
+  spotify shortcode
+
+  Parameters:
+    type   - spotify embed type (track, album, artist, ...)
+    id     - spotify id
+    height - optional. A pixel value (default 352), or "video" to use the same
+             height as the video embeds (--embed-height in assets/css/custom.css).
+*/}}
+{{ $height := .Get "height" | default "352" }}
+{{ $matchVideo := eq $height "video" }}
+<div class="spotify-embed{{ if $matchVideo }} spotify-embed--video-height{{ end }}">
   <iframe style="border-radius:12px"
           src="https://open.spotify.com/embed/{{ .Get "type" }}/{{ .Get "id" }}"
-          width="100%" height="352" frameBorder="0"
+          width="100%" height="{{ if $matchVideo }}450{{ else }}{{ $height }}{{ end }}" frameBorder="0"
           allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy">
   </iframe>

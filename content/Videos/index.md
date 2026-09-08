@@ -92,6 +92,18 @@ ein, wo ihre Musik am stärksten wirkt: auf der Bühne!
   </iframe>
 </div>
 
+**DreiTonTango:**
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/dw22pnw3Od8?si=So3gSsQ-8E1SHJF_"
+    title="Erpelistics - Enough Playing Around (Schon Schön 2025)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ---
 #### Kurfürstenstraßenfest (2025)
 Im Juli 2025 wurde es heiß in der Kurfürstenstraße! Hier ein kleiner Zusammenschnitt unterlegt 

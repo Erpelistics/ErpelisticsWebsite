@@ -13,7 +13,7 @@ resources:
 
 #### „...meine Freiheit hört nicht bei dir auf, sie fängt mit dir an...“
 
-{{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" >}}
+{{< spotify type="album" id="46Oyh0O2sxfg3zSdlLq6zP" height="video">}}
 
 Die Debut-EP „Kulturelle Zwischennutzung“ ist ein kompaktes Bündel erpelistischer Energie 
 und hört sich wie eine Reise durch musikalische Räume an: Mal treibend, mal verträumt, mal 

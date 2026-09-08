@@ -22,31 +22,36 @@ description: ""
 resources:
   - src: Band_1.png
     params:
-      credit: "© Tanja Upravitelev"
+      weight: 1
+      credit: "© Michael Schmidtmann"
   - src: Band_2.png
     params:
-      credit: "© Jojo - Farytaleish_photography"
+      weight: 2
+      credit: "© Liska Märtens"
   - src: Band_3.png
     params:
-      credit: "© Victor Habes"
+      weight: 3
+      credit: "© Jojo - Farytaleish_photography"
   - src: Band_4.png
     params:
-      credit: "© Jojo - Farytaleish_photography"
+      weight: 4
+      credit: "© Victor Habes"
   - src: Band_5.png
     params:
-      credit: "© Tanja Upravitelev"
-  - src: Band_6.jpeg
-    params:
+      weight: 5
       credit: "© Nele Drathen"
-  - src: Band_7.jpg
+  - src: Band_6.png
     params:
-      credit: "© Tanja Upravitelev"
-  - src: Band_8.jpg
-    params:
+      weight: 6
       credit: "© Theresa Daschmann"
-  - src: Band_9.jpg
+  - src: Band_7.png
     params:
-      credit: "© Liska Märtens"
+      weight: 7
+      credit: "© Michael Schmidtmann"
+  - src: Band_8.png
+    params:
+      weight: 8
+      credit: "© Tanja Upravitelev"
   
 ---
 
@@ -74,4 +79,4 @@ Mit einem eigenen Sound, einem albernen Bandnamen und mehr Songs als InstagramB
 
 
 ---
-**Fotos**: [Victor Habes](https://www.victor-habes-vicproductions.com/), [Tanja Upravitelev](http://tup-arte.com/), [Jojo - Farytaleish_photography](https://linktr.ee/jojofairy), [Nele Drathen](https://www.instagram.com/_nelson.ne_/)
+**Fotos**: [Victor Habes](https://www.victor-habes-vicproductions.com/), [Tanja Upravitelev](http://tup-arte.com/), [Jojo - Farytaleish_photography](https://linktr.ee/jojofairy), [Nele Drathen](https://www.instagram.com/_nelson.ne_/), [Michael Schmidtmann](https://www.instagram.com/mmimichi/), Theresa Daschmann

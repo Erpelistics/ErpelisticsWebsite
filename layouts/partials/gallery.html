@@ -1,63 +1,108 @@
-<section class="gallery">
-  <div id="gallery" style="visibility: hidden; height: 1px; overflow: hidden">
+{{/*
+  gallery.html
+  Renders a justified image gallery for a page.
 
-    {{ $publishResources := default true .Params.build.publishResources }}
+  Can be called in two ways:
+    {{ partial "gallery.html" . }}                            -> all images without a `gallery` param
+    {{ partial "gallery.html" (dict "page" . "group" "live") }} -> only images with params.gallery = "live"
+
+  Every gallery container carries the class `gallery-grid` (picked up by
+  assets/js/gallery.js and assets/js/lightbox.js). The first/default gallery
+  additionally keeps the id `gallery` for backwards compatibility.
+*/}}
+
+{{ $page := . }}
+{{ $group := "" }}
+{{ if reflect.IsMap . }}
+  {{ $page = .page }}
+  {{ $group = .group | default "" }}
+{{ end }}
+
+{{ $id := cond (eq $group "") "gallery" (printf "gallery-%s" (urlize $group)) }}
+{{ $publishResources := default true $page.Params.build.publishResources }}
+
+{{/* --- Select the images belonging to this gallery ---
+     Order: `params.weight` (ascending) first, then the page's sort_by/sort_order
+     (name by default). Images without a weight keep their natural position. */}}
+{{ $entries := slice }}
+{{ range $i, $img := sort ($page.Resources.ByType "image") ($page.Params.sort_by | default "Name") ($page.Params.sort_order | default "asc") }}
+  {{ if and (not $img.Params.hidden) (eq (string ($img.Params.gallery | default "")) $group) }}
+    {{ $entries = $entries | append (dict
+      "key" (printf "%08d-%06d" (add 100000 (int ($img.Params.weight | default 0))) $i)
+      "image" $img
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ $images := slice }}
+{{ range sort $entries "key" "asc" }}
+  {{ $images = $images | append .image }}
+{{ end }}
+
+{{/* --- Select the videos belonging to this gallery --- */}}
+{{ $videos := slice }}
+{{ range (partial "get-gallery.html" $page).videos }}
+  {{ if eq (string (.Thumb.Params.gallery | default "")) $group }}
+    {{ $videos = $videos | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if or $images $videos }}
+<section class="gallery">
+  <div id="{{ $id }}" class="gallery-grid" style="visibility: hidden; height: 1px; overflow: hidden">
 
     {{/* --- Loop through images --- */}}
-    {{ range sort (.Resources.ByType "image") (.Params.sort_by | default "Name") (.Params.sort_order | default "asc") }}
-      {{ if not .Params.hidden }}
-        {{ $title := .Title }}
-        {{ $thumbnail := .Filter (slice images.AutoOrient (images.Process "fit 600x600")) }}
-        {{ $full := .Filter (slice images.AutoOrient (images.Process "fit 1600x1600")) }}
-        {{ $color := index $thumbnail.Colors 0 | default "transparent" }}
+    {{ range $images }}
+      {{ $title := .Title }}
+      {{ $thumbnail := .Filter (slice images.AutoOrient (images.Process "fit 600x600")) }}
+      {{ $full := .Filter (slice images.AutoOrient (images.Process "fit 1600x1600")) }}
+      {{ $color := index $thumbnail.Colors 0 | default "transparent" }}
 
-        <a class="gallery-item"
-           href="{{ if $publishResources }}{{ .RelPermalink }}{{ else }}{{ $full.RelPermalink }}{{ end }}"
-           data-pswp-src="{{ $full.RelPermalink }}"
-           data-pswp-width="{{ $full.Width }}"
-           data-pswp-height="{{ $full.Height }}"
-           data-pswp-target="{{ .Name | urlize }}"
-           title="{{ $title }}"
-           itemscope itemtype="https://schema.org/ImageObject"
-           style="aspect-ratio: {{ $thumbnail.Width }} / {{ $thumbnail.Height }}">
+      <a class="gallery-item"
+         href="{{ if $publishResources }}{{ .RelPermalink }}{{ else }}{{ $full.RelPermalink }}{{ end }}"
+         data-pswp-src="{{ $full.RelPermalink }}"
+         data-pswp-width="{{ $full.Width }}"
+         data-pswp-height="{{ $full.Height }}"
+         data-pswp-target="{{ .Name | urlize }}"
+         title="{{ $title }}"
+         itemscope itemtype="https://schema.org/ImageObject"
+         style="aspect-ratio: {{ $thumbnail.Width }} / {{ $thumbnail.Height }}">
 
-          <figure style="background-color: {{ $color }}; aspect-ratio: {{ $thumbnail.Width }} / {{ $thumbnail.Height }}">
-            <img class="lazyload" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" data-src="{{ $thumbnail.RelPermalink }}" alt="{{ $title }}" />
-            {{ with .Params.credit }}
-              <figcaption class="credit">{{ . }}</figcaption>
-            {{ end }}
-          </figure>
-
-          <meta itemprop="contentUrl" content="{{ if $publishResources }}{{ .RelPermalink }}{{ else }}{{ $full.RelPermalink }}{{ end }}" />
-          {{ with site.Params.Author }}
-            <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
-              <meta itemprop="name" content="{{ site.Params.Author.name }}" />
-            </span>
+        <figure style="background-color: {{ $color }}; aspect-ratio: {{ $thumbnail.Width }} / {{ $thumbnail.Height }}">
+          <img class="lazyload" width="{{ $thumbnail.Width }}" height="{{ $thumbnail.Height }}" data-src="{{ $thumbnail.RelPermalink }}" alt="{{ $title }}" />
+          {{ with .Params.credit }}
+            <figcaption class="credit">{{ . }}</figcaption>
           {{ end }}
-        </a>
-      {{ end }}
+        </figure>
+
+        <meta itemprop="contentUrl" content="{{ if $publishResources }}{{ .RelPermalink }}{{ else }}{{ $full.RelPermalink }}{{ end }}" />
+        {{ with site.Params.Author }}
+          <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+            <meta itemprop="name" content="{{ site.Params.Author.name }}" />
+          </span>
+        {{ end }}
+      </a>
     {{ end }}
 
     {{/* --- Loop through videos --- */}}
-    {{ with (partial "get-gallery.html" .).videos }}
-      {{ range . }}
-        {{ $thumb := .Thumb.Filter (slice images.AutoOrient (images.Process "fit 600x600")) }}
-        <a class="gallery-item"
-           href="{{ .VideoLink }}"
-           data-pswp-type="video"
-           data-pswp-target="{{ .Name | urlize }}"
-           title="{{ .Title }}"
-           style="aspect-ratio: {{ $thumb.Width }} / {{ $thumb.Height }}">
+    {{ range $videos }}
+      {{ $thumb := .Thumb.Filter (slice images.AutoOrient (images.Process "fit 600x600")) }}
+      <a class="gallery-item"
+         href="{{ .VideoLink }}"
+         data-pswp-type="video"
+         data-pswp-target="{{ .Name | urlize }}"
+         title="{{ .Title }}"
+         style="aspect-ratio: {{ $thumb.Width }} / {{ $thumb.Height }}">
 
-          <figure style="background-color: {{ index $thumb.Colors 0 | default "transparent" }}; aspect-ratio: {{ $thumb.Width }} / {{ $thumb.Height }}">
-            <img class="lazyload" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" data-src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" />
-            {{ with .Credit }}
-              <figcaption class="credit">{{ . }}</figcaption>
-            {{ end }}
-          </figure>
-        </a>
-      {{ end }}
+        <figure style="background-color: {{ index $thumb.Colors 0 | default "transparent" }}; aspect-ratio: {{ $thumb.Width }} / {{ $thumb.Height }}">
+          <img class="lazyload" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" data-src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" />
+          {{ with .Credit }}
+            <figcaption class="credit">{{ . }}</figcaption>
+          {{ end }}
+        </figure>
+      </a>
     {{ end }}
 
   </div>
 </section>
+{{ end }}

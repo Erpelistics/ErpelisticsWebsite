@@ -10,28 +10,37 @@ params:
 resources:
   - src: Band_1.png
     params:
-      credit: "© Tanja Upravitelev"
-  - src: Band_2.png
+      credit: "© Michael Schmidtmann"
+  - src: Band_2.jpg
     params:
-      credit: "© Jojo - Farytaleish_photography"
+      credit: "© Michael Schmidtmann"
   - src: Band_3.png
     params:
-      credit: "© Victor Habes"
+      credit: "© Theresa Daschmann"
   - src: Band_4.png
     params:
-      credit: "© Jojo - Farytaleish_photography"
-  - src: Band_5.png
-    params:
       credit: "© Tanja Upravitelev"
-  - src: Band_6.jpeg
+  # Live-Fotos: zweite Galerie im Fließtext (params.gallery: live)
+  - src: Live_1.JPG
     params:
-      credit: "© Nele Drathen"
-  - src: Band_7.jpg
-    params:
-      credit: "© Tanja Upravitelev"
-  - src: Band_8.jpg
-    params:
+      gallery: live
+      weight: 1
       credit: "© Theresa Daschmann"
+  - src: Live_2.png
+    params:
+      gallery: live
+      weight: 3
+      credit: "© Jojo - Farytaleish_photography"
+  - src: Live_3.png
+    params:
+      gallery: live
+      weight: 4
+      credit: "© Theresa Daschmann"
+  - src: Live_5.jpg
+    params:
+      gallery: live
+      weight: 2
+      credit: "©"
 ---
 
 {{< personalize-script >}}
@@ -40,26 +49,17 @@ resources:
 
 we would absolutely love to play at your festival! To give you a sense of who we are, we've put together all the important information for you on this page. If you still need more information or have any questions, feel free to reach out to us anytime. We're looking forward to hearing from you!
 
-Erpelistic regards,
-
+Erpelistic regards, \
 Roberto, Julius, David, Constantin
 
 
----
-
-#### About Us
-
-What began as aimless jamming between three childhood friends in a shared apartment in Mainz found its concrete form as a band project during the corona pandemic, of all times. The initially purely instrumental trio of guitar, bass, and percussion explored a wide variety of genres from the start, repeatedly pausing on rock's well-trodden paths to experiment with jazz and psychedelic funk, stoner rock, and post-punk. A dynamic crossover style crystallized, with which David (guitar), Coco (drums), and Julius (bass) first performed under the name Erpelistics in late 2022.
-
-The group was only complete, however, once vocals were added in summer 2023. Roberto's powerful yet tender voice didn't just add another color to the music; the New York native enriched the band with the dimension of poetry. From catchy sing-along anthems to intimate, eyes-closed chansons to ironic verses that bring a smile, a broad repertoire of songs emerged, with which Erpelistics has been skillfully planting earworms in their audience's ears for about two years now.
-
-With the release of their first EP Kulturelle Zwischennutzung in June 2025, part of this repertoire can finally be heard in fine studio quality too — a milestone for the four musicians, who have long since been working on new projects again and are continuing their journey together: with a sound of their own, a silly band name, and more songs than Instagram posts.
+{{< gallery "live" >}}
 
 ---
 
 #### Music Snippets
 
-{{< spotify type="artist" id="3AHW8bdZjGfrX4KkEfEAzd" >}}
+{{< spotify type="artist" id="3AHW8bdZjGfrX4KkEfEAzd" height="video" >}}
 
 ---
 
@@ -75,6 +75,18 @@ With the release of their first EP Kulturelle Zwischennutzung in June 2025, part
     allowfullscreen>
   </iframe>
 </div>
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/8ZOn9S_ORQQ?si=zrxA5ZkPsXl-mMAU"
+    title="Erpelistics - Pororoca (Klein Aber Schick Konzert 2026)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
 ---
 

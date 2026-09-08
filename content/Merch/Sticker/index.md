@@ -2,6 +2,7 @@
 title: Sticker
 categories: ["Sticker"]
 subtitle: "Erpelistics - Sticker"
+description: Gönn dir unsere Sticker. Erhältlich bei all unseren Konzerten.
 weight: 4
 params:
   theme: dark
@@ -18,3 +19,6 @@ resources:
   - src: Duck_Feet_sticker.jpeg
     params:
 ---
+
+---
+

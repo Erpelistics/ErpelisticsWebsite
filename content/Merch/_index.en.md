@@ -7,7 +7,7 @@ menu:
   main:
     weight: 5
     name: "Merch"
-description: "Here you can find all the available Erpelistics Merch."
+description: "Here you can find all the available Erpelistics Merch. There is more to come"
 resources:
   - src: Duck_Feet_sticker.jpeg
     params:

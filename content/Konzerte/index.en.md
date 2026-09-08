@@ -2,8 +2,7 @@
 title: Concerts
 slug: concerts
 subtitle: "Erpelistics Live"
-description: Find all Erpelistics concerts and events here. Get your tickets now!
-weight: 3
+description: Find info to all our concerts and events here.
 menu:
   main:
     weight: 3
@@ -11,11 +10,11 @@ menu:
 resources:
   - src: Konzerte2.png
     params:
-      credit: "© Theresa Daschmann"
+      cover: true
+      credit: "© Anna Filtzinger"
   - src: Konzerte3.png
     params:
-      cover: true
-      credit: "© Tanja Upravitelev"
+      credit: "©"
   - src: Konzerte4.png
     params:
       credit: "© Theresa Daschmann"

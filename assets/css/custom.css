@@ -1,5 +1,15 @@
 /* custom.css */
 
+/* Embedded players. Videos keep a 16:9 frame and scale with the page width.
+   The Spotify player gets a fixed height instead: the height a 16:9 video has at
+   the maximum text width (prose box 1024px - 2 x 24px padding = 976px, so
+   976 / 16 * 9 = 549px), so the player keeps its full track list on narrow
+   screens instead of shrinking with the layout. */
+:root {
+  --embed-aspect-ratio: 16 / 9;
+  --spotify-embed-height: 549px;
+}
+
 /* Responsive header logo */
 .site-logo {
   height: 40px;          /* default height for desktop */
@@ -221,9 +231,27 @@
 
 .video-container iframe {
   width: 100%;
-  height: 450px;          /* responsive, keeps aspect ratio if needed */
+  aspect-ratio: var(--embed-aspect-ratio);
+  height: auto;
   display: block;
   border: none;
+}
+
+.spotify-embed iframe {
+  width: 100%;
+  display: block;
+  border: none;
+}
+
+/* Opt-in via {{< spotify ... height="video" >}}: player as tall as the videos.
+   Without the parameter the shortcode keeps its default 352px, so the release
+   pages are unaffected. */
+.spotify-embed--video-height {
+  margin: 2rem auto;
+}
+
+.spotify-embed--video-height iframe {
+  height: var(--spotify-embed-height);
 }
 
 @media (min-width: 1024px) {
@@ -285,4 +313,27 @@
 
 .lang-link:hover {
   color: var(--text-1);
+}
+/* Galleries placed inside page content via {{< gallery "name" >}} ------------- */
+/* Break out of the 768px prose column so in-content galleries span the full
+   page width, just like the main gallery at the top of the page.
+   --page-width is set by assets/js/gallery.js and excludes the scrollbar;
+   100vw is the fallback when JS has not run yet. */
+.prose section.gallery {
+  width: var(--page-width, 100vw);
+  max-width: var(--page-width, 100vw);
+  margin: 3rem calc(50% - var(--page-width, 100vw) / 2);
+  padding: 0;
+}
+
+/* The .prose typography defaults must not reach into the justified layout:
+   `.prose figure { margin: 2em 0 }` would push every image 32px down inside its
+   fixed-height, overflow-hidden box and crop it at the bottom. */
+.prose section.gallery .gallery-item {
+  text-decoration: none;
+}
+
+.prose section.gallery .gallery-item figure,
+.prose section.gallery .gallery-item img {
+  margin: 0;
 }

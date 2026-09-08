@@ -1,0 +1,13 @@
+{{/*
+  gallery shortcode
+  Renders an additional gallery inside the page content.
+
+  Usage in Markdown:
+    {{< gallery "live" >}}      or      {{< gallery name="live" >}}
+
+  Shows every image resource of the page whose frontmatter carries
+  `params.gallery: live`. Images without a `gallery` param stay in the
+  main gallery at the top of the page.
+*/}}
+{{ $name := .Get "name" | default (.Get 0) | default "" }}
+{{ partial "gallery.html" (dict "page" .Page "group" $name) }}
