@@ -367,3 +367,10 @@
 .prose section.gallery .gallery-item img {
   margin: 0;
 }
+
+/* Page description below the title: keep it centred at every screen size.
+   The theme justifies it, which only shows once it wraps (i.e. on phones). */
+hgroup p {
+  text-align: center;
+  text-wrap: balance;
+}
