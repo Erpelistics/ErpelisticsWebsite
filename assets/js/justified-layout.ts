@@ -1,6 +1,6 @@
 /*!
- * Original work Copyright 2019 SmugMug, Inc.
- * Modified work Copyright 2025 Nico Kaiser
+ * Justified layout with optimal line breaking.
+ * Replaces the greedy SmugMug-based layout shipped with hugo-theme-gallery.
  * Licensed under the terms of the MIT license.
  */
 
@@ -8,155 +8,73 @@ export interface LayoutOptions {
   rowHeight: number;
   rowWidth: number;
   spacing: number;
-  heightTolerance: number;
 }
 
-/**
- * Row
- * Wrapper for each row in a justified layout.
- */
-class Row {
+export interface Box {
+  aspectRatio: number;
   top: number;
-  rowWidth: number;
-  spacing: number;
-  rowHeight: number;
-  heightTolerance: number;
-  minAspectRatio: number;
-  maxAspectRatio: number;
-  items: {
-    aspectRatio: number;
-    top?: number;
-    width?: number;
-    height?: number;
-    left?: number;
-  }[] = [];
-  height = 0;
-
-  constructor(params: LayoutOptions & { top: number }) {
-    this.top = params.top;
-    this.rowWidth = params.rowWidth;
-    this.spacing = params.spacing;
-    this.rowHeight = params.rowHeight;
-    this.heightTolerance = params.heightTolerance;
-
-    this.minAspectRatio = (this.rowWidth / params.rowHeight) * (1 - params.heightTolerance);
-    this.maxAspectRatio = (this.rowWidth / params.rowHeight) * (1 + params.heightTolerance);
-  }
-
-  addItem(aspectRatio: number): boolean {
-    const itemData = { aspectRatio };
-    const newItems = this.items.concat(itemData);
-    const rowWidthWithoutSpacing = this.rowWidth - (newItems.length - 1) * this.spacing;
-    const newAspectRatio = newItems.reduce((sum, item) => sum + item.aspectRatio, 0);
-    const targetAspectRatio = rowWidthWithoutSpacing / this.rowHeight;
-
-    if (newAspectRatio < this.minAspectRatio) {
-      this.items.push(itemData);
-      return true;
-    } else if (newAspectRatio > this.maxAspectRatio) {
-      if (this.items.length === 0) {
-        this.items.push(itemData);
-        this.completeLayout(rowWidthWithoutSpacing / newAspectRatio);
-        return true;
-      }
-
-      const previousRowWidthWithoutSpacing = this.rowWidth - (this.items.length - 1) * this.spacing;
-      const previousAspectRatio = this.items.reduce((sum, item) => sum + item.aspectRatio, 0);
-      const previousTargetAspectRatio = previousRowWidthWithoutSpacing / this.rowHeight;
-
-      if (Math.abs(newAspectRatio - targetAspectRatio) > Math.abs(previousAspectRatio - previousTargetAspectRatio)) {
-        this.completeLayout(previousRowWidthWithoutSpacing / previousAspectRatio);
-        return false;
-      } else {
-        this.items.push(itemData);
-        this.completeLayout(rowWidthWithoutSpacing / newAspectRatio);
-        return true;
-      }
-    } else {
-      this.items.push(itemData);
-      this.completeLayout(rowWidthWithoutSpacing / newAspectRatio);
-      return true;
-    }
-  }
-
-  /**
-   * Complete row layout
-   * @param isLastRow - if true, center items horizontally
-   */
-  completeLayout(newHeight: number, isLastRow = false) {
-    const rowWidthWithoutSpacing = this.rowWidth - (this.items.length - 1) * this.spacing;
-    const clampedHeight = Math.max(0.5 * this.rowHeight, Math.min(newHeight, 2 * this.rowHeight));
-    this.height = clampedHeight;
-
-    // Compute item geometry
-    let itemWidthSum = 0;
-    this.items.forEach(item => {
-      item.top = this.top;
-      item.width = item.aspectRatio * this.height;
-      item.height = this.height;
-      item.left = itemWidthSum;
-      itemWidthSum += item.width + this.spacing;
-    });
-
-    // Center last row if needed
-    if (isLastRow) {
-      const totalRowWidth = itemWidthSum - this.spacing;
-      const offset = (this.rowWidth - totalRowWidth) / 2;
-      this.items.forEach(item => {
-        item.left! += offset;
-      });
-    }
-  }
+  left: number;
+  width: number;
+  height: number;
 }
 
 /**
- * Justified layout
+ * Lays out items in rows that all span the full row width — including the last
+ * row, so there are never orphaned images.
+ *
+ * A greedy algorithm fills rows one after another and has to take whatever is
+ * left over for the last row. Instead, this considers every possible way to
+ * split the (ordered) items into rows and picks the split whose row heights are
+ * closest to the target row height overall (dynamic programming, O(n²)).
+ * Each row is then scaled so that it exactly fills the available width.
  */
-export default function(aspectRatios: number[], layoutOptions: LayoutOptions) {
-  let containerHeight = 0;
-  let boxes: {
-    aspectRatio: number;
-    top?: number;
-    width?: number;
-    height?: number;
-    left?: number;
-  }[] = [];
+export default function (aspectRatios: number[], { rowHeight, rowWidth, spacing }: LayoutOptions) {
+  const n = aspectRatios.length;
 
-  let currentRow: Row | null = null;
-  let lastRowHeight = 0;
+  // prefix[i] = sum of the first i aspect ratios
+  const prefix = [0];
+  aspectRatios.forEach((ar, i) => prefix.push(prefix[i] + ar));
 
-  for (const aspectRatio of aspectRatios) {
-    if (!currentRow) {
-      currentRow = new Row({ top: containerHeight, ...layoutOptions });
-    }
+  // Height of a row holding items [start, end) scaled to fill the full width
+  const heightOf = (start: number, end: number) =>
+    (rowWidth - (end - start - 1) * spacing) / (prefix[end] - prefix[start]);
 
-    let itemAdded = currentRow.addItem(aspectRatio);
+  // Deviation from the target height, symmetric for too tall / too short rows
+  const costOf = (height: number) => (height > 0 ? Math.log(height / rowHeight) ** 2 : Infinity);
 
-    if (currentRow.height > 0) {
-      lastRowHeight = currentRow.height;
-      boxes = boxes.concat(currentRow.items);
-      containerHeight += currentRow.height + layoutOptions.spacing;
-      currentRow = new Row({ top: containerHeight, ...layoutOptions });
-
-      if (!itemAdded) {
-        itemAdded = currentRow.addItem(aspectRatio);
-        if (currentRow.height > 0) {
-          lastRowHeight = currentRow.height;
-          boxes = boxes.concat(currentRow.items);
-          containerHeight += currentRow.height + layoutOptions.spacing;
-          currentRow = new Row({ top: containerHeight, ...layoutOptions });
-        }
+  // best[i] = lowest total cost for laying out the first i items; breakAt[i] = start of the last row
+  const best = [0];
+  const breakAt = [0];
+  for (let end = 1; end <= n; end++) {
+    best[end] = Infinity;
+    for (let start = end - 1; start >= 0; start--) {
+      const cost = best[start] + costOf(heightOf(start, end));
+      if (cost < best[end]) {
+        best[end] = cost;
+        breakAt[end] = start;
       }
     }
   }
 
-  // Handle leftover items (last row)
-  if (currentRow && currentRow.items.length) {
-    currentRow.completeLayout(lastRowHeight || layoutOptions.rowHeight, true); // <--- center last row
-    boxes = boxes.concat(currentRow.items);
-    containerHeight += currentRow.height + layoutOptions.spacing;
+  // Walk back through the chosen breaks to recover the rows
+  const rows: [number, number][] = [];
+  for (let end = n; end > 0; end = breakAt[end]) {
+    rows.unshift([breakAt[end], end]);
   }
 
-  containerHeight -= layoutOptions.spacing; // remove extra spacing
+  const boxes: Box[] = [];
+  let top = 0;
+  for (const [start, end] of rows) {
+    const height = heightOf(start, end);
+    let left = 0;
+    for (let i = start; i < end; i++) {
+      const width = aspectRatios[i] * height;
+      boxes.push({ aspectRatio: aspectRatios[i], top, left, width, height });
+      left += width + spacing;
+    }
+    top += height + spacing;
+  }
+
+  const containerHeight = Math.max(0, top - spacing);
   return { containerHeight, boxes };
 }

@@ -40,8 +40,6 @@ galleries.forEach((gallery) => {
       rowWidth: containerWidth,
       spacing: Number.isInteger(params.boxSpacing) ? params.boxSpacing : 8,
       rowHeight: getTargetRowHeight(),
-      heightTolerance: Number.isInteger(params.targetRowHeightTolerance) ? params.targetRowHeightTolerance : 0.25,
-      justifyLastRow: "center",
     });
 
     items.forEach((item, i) => {
