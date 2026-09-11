@@ -75,7 +75,7 @@ Publikums platzieren.
 Mit dem Erscheinen ihrer ersten EP Kulturelle Zwischennutzung im Juni 2025 ist ein Teil 
 dieses Repertoires endlich auch in feiner Studioqualität zu hören – ein Meilenstein für die vier 
 Musiker, die längst wieder an neuen Projekten arbeiten und ihren Weg gemeinsam fortsetzen: 
-Mit einem eigenen Sound, einem albernen Bandnamen und mehr Songs als InstagramBeiträgen.
+Mit einem eigenen Sound, einem albernen Bandnamen und mehr Songs als Instagram Beiträgen.
 
 
 ---
