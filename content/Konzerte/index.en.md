@@ -14,7 +14,7 @@ resources:
       credit: "© Anna Filtzinger"
   - src: Konzerte3.png
     params:
-      credit: "©"
+      credit: "© Finn Geiger"
   - src: Konzerte4.png
     params:
       credit: "© Theresa Daschmann"
