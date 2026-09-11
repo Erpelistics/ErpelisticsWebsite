@@ -1,12 +1,13 @@
 ---
 date: 2026-08-26
-title: Festival Application
+title: We want to play at your festival
 slug: festival-application
-description: "We want to play at your festival!"
+description: "Application for your festival 2027"
 params:
   private: true
   hide_gallery: false
-  title_template: "Application for the {name} festival"
+  title_template: "We want to play at the {name} festival"
+  description_template: "Application for the {name} festival 2027"
 resources:
   - src: Band_1.png
     params:

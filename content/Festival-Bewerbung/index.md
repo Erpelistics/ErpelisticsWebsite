@@ -1,61 +1,62 @@
 ---
 date: 2026-08-26
-title: Festival-Bewerbung
-description: "Wir wollen auf eurem Festival spielen!"
+title: Wir wollen auf euerem Festival spielen
+description: "Bewerbung für euer Festival 2027"
 params:
   private: true
   hide_gallery: false
-  title_template: "Bewerbung für das {name} Festival"
+  title_template: "Wir wollen auf dem {name} Festival spielen"
+  description_template: "Bewerbung für das {name} Festival 2027"
 resources:
-  - src: Band_1.png
-    params:
-      credit: "© Michael Schmidtmann"
-  - src: Band_2.jpg
-    params:
-      credit: "© Michael Schmidtmann"
-  - src: Band_3.png
-    params:
-      credit: "© Theresa Daschmann"
-  - src: Band_4.png
-    params:
-      credit: "© Tanja Upravitelev"
-  # Live-Fotos: zweite Galerie im Fließtext (params.gallery: live)
   - src: Live_1.JPG
     params:
-      gallery: live
       weight: 1
       credit: "© Theresa Daschmann"
   - src: Live_2.png
     params:
-      gallery: live
       weight: 3
       credit: "© Jojo - Farytaleish_photography"
   - src: Live_3.png
     params:
-      gallery: live
       weight: 4
       credit: "© Theresa Daschmann"
   - src: Live_5.jpg
     params:
-      gallery: live
       weight: 2
       credit: "©"
+  # Band-Fotos: zweite Galerie im Fließtext (params.gallery: band)
+  - src: Band_1.png
+    params:
+      gallery: band
+      credit: "© Michael Schmidtmann"
+  - src: Band_2.jpg
+    params:
+      gallery: band
+      credit: "© Michael Schmidtmann"
+  - src: Band_3.png
+    params:
+      gallery: band
+      credit: "© Theresa Daschmann"
+  - src: Band_4.png
+    params:
+      gallery: band
+      credit: "© Tanja Upravitelev"
+
 ---
 
 {{< personalize-script >}}
 
 <p><strong data-template="Liebes {name}-Team,">Liebes Festival-Team,</strong></p>
 
-wir haben riesige Lust, auf eurem Festival zu spielen! Damit ihr euch einen Eindruck 
-von uns machen könnt, haben wir auf dieser Seite alle wichtigen Informationen über uns
-zusammen gestellt. Falls ihr noch mehr Infos benötigt oder noch Fragen offen bleiben,
-könnt ihr euch natürlich jederzeit bei uns melden. Wir freuen uns auf eure Rückmeldung!
+wir haben riesige Lust, auf eurem Festival zu spielen. 
+Damit ihr euch einen Eindruck von uns machen könnt, haben wir euch hier Musik-Ausschnitte, Live-Videos, Techrider & Pressekit sowie einen Link zu unserer [Insta-Page](https://www.instagram.com/erpelistics/#) zusammengestellt.
+Für Rückfragen aller Art erreicht ihr uns unter [erpelistics@web.de](mailto:erpelistics@web.de)
 
 Erpelistische Grüße, \
 Roberto, Julius, David, Constantin
 
 
-{{< gallery "live" >}}
+{{< gallery "band" >}}
 
 ---
 
@@ -114,3 +115,7 @@ unser Pressekit downloaden.
 |---------------------------|---------------------------------------------------|
 | [Tech-Rider.pdf](/downloads/Techrider_Erpelistics.pdf) | Technische Anforderungen \[141 kB\]    |
 | [Pressekit.zip](/downloads/Pressekit.zip)               | Pressekit \[14.4 MB\]      |
+
+---
+
+#### Vielen Dank für eure Zeit! Wir freuen uns auf eure Rückmeldung.

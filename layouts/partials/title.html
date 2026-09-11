@@ -2,7 +2,7 @@
   <hgroup>
     <h1 id="page-title"{{ with .Params.title_template }} data-template="{{ . }}"{{ end }}>{{ .Title }}</h1>
     {{ with .Params.Description }}
-      <p>{{ . | markdownify }}</p>
+      <p{{ with $.Params.description_template }} data-template="{{ . }}"{{ end }}>{{ . | markdownify }}</p>
     {{ end }}
   </hgroup>
 {{ end }}
