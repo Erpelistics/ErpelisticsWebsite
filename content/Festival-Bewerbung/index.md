@@ -8,28 +8,28 @@ params:
   title_template: "Wir wollen auf dem {name} Festival spielen"
   description_template: "Bewerbung für das {name} Festival 2027"
 resources:
-  - src: Live_1.JPG
+  - src: Live_1.png
     params:
       weight: 1
       credit: "© Theresa Daschmann"
   - src: Live_2.png
     params:
-      weight: 3
+      weight: 2
       credit: "© Jojo - Farytaleish_photography"
   - src: Live_3.png
     params:
       weight: 4
       credit: "© Theresa Daschmann"
-  - src: Live_5.jpg
+  - src: Live_5.png
     params:
-      weight: 2
-      credit: "©"
+      weight: 3
+      credit: "© Finn Geiger"
   # Band-Fotos: zweite Galerie im Fließtext (params.gallery: band)
   - src: Band_1.png
     params:
       gallery: band
       credit: "© Michael Schmidtmann"
-  - src: Band_2.jpg
+  - src: Band_2.png
     params:
       gallery: band
       credit: "© Michael Schmidtmann"
@@ -82,7 +82,7 @@ Roberto, Julius, David, Constantin
 <div class="video-container">
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/8ZOn9S_ORQQ?si=zrxA5ZkPsXl-mMAU"
-    title="Erpelistics - Pororoca (Klein Aber Schick Konzert 2026)"
+    title="Erpelistics - Surf's Up / Surfando as Pororocas (Klein Aber Schick Konzert 2026)"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"

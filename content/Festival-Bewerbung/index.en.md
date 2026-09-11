@@ -9,39 +9,39 @@ params:
   title_template: "We want to play at the {name} festival"
   description_template: "Application for the {name} festival 2027"
 resources:
-  - src: Band_1.png
+  - src: Live_1.png
     params:
-      credit: "© Michael Schmidtmann"
-  - src: Band_2.jpg
-    params:
-      credit: "© Michael Schmidtmann"
-  - src: Band_3.png
-    params:
-      credit: "© Theresa Daschmann"
-  - src: Band_4.png
-    params:
-      credit: "© Tanja Upravitelev"
-  # Live-Fotos: zweite Galerie im Fließtext (params.gallery: live)
-  - src: Live_1.JPG
-    params:
-      gallery: live
       weight: 1
       credit: "© Theresa Daschmann"
   - src: Live_2.png
     params:
-      gallery: live
-      weight: 3
+      weight: 2
       credit: "© Jojo - Farytaleish_photography"
   - src: Live_3.png
     params:
-      gallery: live
       weight: 4
       credit: "© Theresa Daschmann"
-  - src: Live_5.jpg
+  - src: Live_5.png
     params:
-      gallery: live
-      weight: 2
-      credit: "©"
+      weight: 3
+      credit: "© Finn Geiger"
+  # Band-Fotos: zweite Galerie im Fließtext (params.gallery: band)
+  - src: Band_1.png
+    params:
+      gallery: band
+      credit: "© Michael Schmidtmann"
+  - src: Band_2.png
+    params:
+      gallery: band
+      credit: "© Michael Schmidtmann"
+  - src: Band_3.png
+    params:
+      gallery: band
+      credit: "© Theresa Daschmann"
+  - src: Band_4.png
+    params:
+      gallery: band
+      credit: "© Tanja Upravitelev"
 ---
 
 {{< personalize-script >}}
@@ -80,7 +80,18 @@ Roberto, Julius, David, Constantin
 <div class="video-container">
   <iframe width="560" height="315"
     src="https://www.youtube.com/embed/8ZOn9S_ORQQ?si=zrxA5ZkPsXl-mMAU"
-    title="Erpelistics - Pororoca (Klein Aber Schick Konzert 2026)"
+    title="Erpelistics - Surf's Up / Surfando as Pororocas (Klein Aber Schick Konzert 2026)"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/vG51Cj-VXnc?si=JW2zVHxRN9hFW2zQ"
+    title="Erpelistics - Enough Playing Around (Schon Schön 2025)"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
