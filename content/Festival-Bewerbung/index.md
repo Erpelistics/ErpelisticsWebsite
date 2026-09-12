@@ -5,7 +5,7 @@ description: "Bewerbung für euer Festival 2027"
 params:
   private: true
   hide_gallery: false
-  title_template: "Wir wollen auf dem {name} Festival spielen"
+  title_template: "Wir wollen auf euerem Festival spielen"
   description_template: "Bewerbung für das {name} Festival 2027"
 resources:
   - src: Live_1.png
