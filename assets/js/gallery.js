@@ -20,6 +20,18 @@ function getTargetRowHeight() {
   return params.targetRowHeight || 288;
 }
 
+// Largest height a row may be stretched to in order to span the full width.
+// Galleries with too few images to fill a row stop here and fall back to the
+// plain target height instead of being blown up to banner size.
+//
+// On narrow screens a row spanning the full width is the natural look even when
+// it holds a single image, so the limit only applies from the desktop
+// breakpoint upwards, where a stretched row is what turns into a banner.
+// Returning undefined leaves the layout's own default (1.5x the target) in place.
+function getMaxRowHeight() {
+  return window.innerWidth < 768 ? Infinity : undefined;
+}
+
 galleries.forEach((gallery) => {
   let containerWidth = 0;
   const items = gallery.querySelectorAll(".gallery-item");
@@ -36,10 +48,12 @@ galleries.forEach((gallery) => {
     if (containerWidth === gallery.getBoundingClientRect().width) return;
     containerWidth = gallery.getBoundingClientRect().width;
 
+    const targetRowHeight = getTargetRowHeight();
     const layout = justifiedLayout(aspectRatios, {
       rowWidth: containerWidth,
       spacing: Number.isInteger(params.boxSpacing) ? params.boxSpacing : 8,
-      rowHeight: getTargetRowHeight(),
+      rowHeight: targetRowHeight,
+      maxRowHeight: getMaxRowHeight(),
     });
 
     items.forEach((item, i) => {
