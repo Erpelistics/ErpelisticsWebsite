@@ -21,7 +21,23 @@ jobs:
         with:
           submodules: false
           fetch-depth: 0
-          lfs: true
+          lfs: false
+
+      # Cache the LFS objects instead of re-downloading them on every build:
+      # the press kit alone costs 140 MB of LFS bandwidth per build.
+      - name: Collect LFS object IDs
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+
+      - name: Restore LFS cache
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+
+      - name: Checkout LFS objects
+        run: |
+          git lfs pull
+          rm .lfs-assets-id
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
