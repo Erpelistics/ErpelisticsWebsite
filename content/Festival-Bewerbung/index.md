@@ -113,8 +113,8 @@ unser Pressekit downloaden.
 
 | Downloads                 |                                   |
 |---------------------------|---------------------------------------------------|
-| [Tech-Rider.pdf](/downloads/Techrider_Erpelistics.pdf) | Technische Anforderungen \[141 kB\]    |
-| [Pressekit.zip](/downloads/Pressekit.zip)               | Pressekit \[14.4 MB\]      |
+| [Tech-Rider.pdf](/downloads/Techrider_Erpelistics_DE.pdf) | Technische Anforderungen \[453.8 kB\]    |
+| [Pressekit.zip](/downloads/Pressekit_DE.zip)               | Pressekit \[146.2 MB\]      |
 
 ---
 
