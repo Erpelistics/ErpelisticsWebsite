@@ -111,4 +111,4 @@ For any questions or feedback regarding our festival application, you can reach 
 | Downloads                 |                                   |
 |---------------------------|---------------------------------------------------|
 | [Tech-Rider.pdf](/downloads/Techrider_Erpelistics_EN.pdf) | Technical requirements \[445.7 kB\]    |
-| [Presskit.zip](/downloads/Pressekit_DE.zip)               | Press kit \[146.2 MB\]      |
+| [Presskit.zip](/downloads/Pressekit_DE.zip)               | Press kit \[31.0 MB\]      |

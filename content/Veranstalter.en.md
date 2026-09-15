@@ -17,4 +17,4 @@ Here you can find all the important information and resources for promoters inte
 | Downloads                 |                                   |
 |---------------------------|---------------------------------------------------|
 | [Tech-Rider.pdf](/downloads/Techrider_Erpelistics_EN.pdf) | Technical requirements \[445.7 kB\]    |
-| [Press kit .zip](/downloads/Pressekit_DE.zip)               | Press kit \[146.2 MB\]      |
+| [Press kit .zip](/downloads/Pressekit_DE.zip)               | Press kit \[31.0 MB\]      |

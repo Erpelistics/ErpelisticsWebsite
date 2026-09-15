@@ -15,4 +15,4 @@ Hier findest du alle wichtigen Informationen und Ressourcen für Veranstalter\*i
 | Downloads                 |                                   |
 |---------------------------|---------------------------------------------------|
 | [Tech-Rider.pdf](/downloads/Techrider_Erpelistics_DE.pdf) | Technische Anforderungen \[453.8 kB\]    |
-| [Pressekit.zip](/downloads/Pressekit_DE.zip)               | Pressekit \[146.2 MB\]      |
+| [Pressekit.zip](/downloads/Pressekit_DE.zip)               | Pressekit \[31.0 MB\]      |
