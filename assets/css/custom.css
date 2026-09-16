@@ -374,3 +374,11 @@ hgroup p {
   text-align: center;
   text-wrap: balance;
 }
+
+/* Festival-specific blocks ({{< festival-only >}}) ship hidden and are revealed
+   by personalize.js when ?festival= matches. Belt and braces: make sure no
+   theme rule can win against the `hidden` attribute and leak another
+   festival's block onto the page. */
+.festival-only[hidden] {
+  display: none !important;
+}

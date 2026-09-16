@@ -42,6 +42,13 @@ resources:
     params:
       gallery: band
       credit: "© Tanja Upravitelev"
+  # Photos for the Open Ohr block: its own gallery (params.gallery: open-ohr).
+  # Images carrying a `gallery` param do NOT show up in the main gallery above.
+  # Drop the files into this folder and remove the `#` in front of the lines:
+  # - src: OpenOhr_1.png
+  #   params:
+  #     gallery: open-ohr
+  #     credit: "© ..."
 ---
 
 {{< personalize-script >}}
@@ -112,3 +119,5 @@ For any questions or feedback regarding our festival application, you can reach 
 |---------------------------|---------------------------------------------------|
 | [Tech-Rider.pdf](/downloads/Techrider_Erpelistics_EN.pdf) | Technical requirements \[445.7 kB\]    |
 | [Presskit.zip](/downloads/Pressekit_DE.zip)               | Press kit \[31.0 MB\]      |
+
+---

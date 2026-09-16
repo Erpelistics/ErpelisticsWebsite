@@ -41,6 +41,11 @@ resources:
     params:
       gallery: band
       credit: "© Tanja Upravitelev"
+  # Open-Ohr-Fotos: Dritte, festival-spezifische, Gallery ganz am Ende
+  - src: OpenOhr_1.png
+    params:
+      gallery: open-ohr
+      credit: "© Theresa Daschmann"
 
 ---
 
@@ -119,3 +124,13 @@ unser Pressekit downloaden.
 ---
 
 #### Vielen Dank für eure Zeit! Wir freuen uns auf eure Rückmeldung.
+
+---
+
+{{< festival-only name="Open Ohr" gallery="open-ohr" >}}
+
+#### PS: das sind übrigens wir 2024 beim Jammen auf eurem Zeltplatz :)
+
+{{< /festival-only >}}
+
+---
