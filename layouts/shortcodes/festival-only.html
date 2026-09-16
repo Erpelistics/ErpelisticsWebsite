@@ -1,0 +1,38 @@
+{{/*
+  festival-only shortcode
+  Wraps a text + gallery segment that is only shown when the page is opened
+  with a matching `?festival=` query parameter, e.g.
+
+    /festival-bewerbung/?festival=Open%20Ohr
+
+  Usage in Markdown:
+    {{< festival-only name="Open Ohr" gallery="open-ohr" >}}
+    #### Warum gerade das Open Ohr?
+    Text ...
+    {{< /festival-only >}}
+
+  `name`    -- the festival, matched against the query parameter.
+  `gallery` -- optional; renders the page's images carrying
+               `params.gallery: <value>` below the text. Leave it out for a
+               text-only block.
+
+  The gallery is rendered here rather than with a nested {{< gallery >}}
+  shortcode on purpose: the gallery partial emits indented HTML, and anything
+  indented that passes through `markdownify` below would come out as a code
+  block.
+
+  The block is rendered into the HTML but starts hidden, so a visitor without
+  the parameter (or with a different festival) never sees it and there is no
+  flash of content on load. The reveal happens in the page's personalize.js,
+  which matches `data-festival` ignoring case, spaces and hyphens -- "Open Ohr",
+  "open ohr" and "open-ohr" are equivalent.
+
+  Note: this is display-only. The content ships to every visitor and is
+  readable in the page source.
+*/}}
+{{ $name := .Get "name" | default (.Get 0) | default "" }}
+{{ $gallery := .Get "gallery" | default "" }}
+<div class="festival-only" data-festival="{{ $name }}" hidden>
+{{ .Inner | markdownify }}
+{{ with $gallery }}{{ partial "gallery.html" (dict "page" $.Page "group" .) }}{{ end }}
+</div>
